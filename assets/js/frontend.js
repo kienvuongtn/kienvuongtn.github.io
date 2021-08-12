@@ -379,7 +379,7 @@
         }
 
         /*ADD TO WISHLIST*/
-        $('.product-item .wishlist > a').on('click', function () {
+        $('.product-item .wishlist > a, .group-buttons > .wishlist-button').on('click', function () {
             var button        = $(this);
             var wishlist      = $('.block-wishlist');
             var wishlistTotal = wishlist.find('.count').attr('data-totalitems');

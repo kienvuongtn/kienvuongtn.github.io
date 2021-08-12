@@ -1663,6 +1663,19 @@ body {
 .popup-product .product-item .group-buttons a:hover span {
     border-color: #000;
 }
+.popup-product .product-item .group-buttons a.added:hover > span {
+    font-size: 10px;
+}
+.popup-product .product-item .group-buttons a.added > span {
+    border-color: #ff0000;
+    color: #ff0000;
+}
+.popup-product .product-item .group-buttons a.added:hover > span {
+    color: #000;
+}
+.popup-product .product-item .group-buttons .wishlist-button.added:hover > span::before {
+    content: "\e92e";
+}
 .popup-product .product-item .view-full-product {
     border-top: solid 1px #e9e9e9;
     padding: 15px 0;
