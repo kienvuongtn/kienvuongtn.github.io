@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Unsen - Template Blog Grid</title>
+    <title> Unsen - Template Shop List</title>
     <link href="assets/vendor/flickity/flickity.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -19,55 +19,18 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap"
           rel="stylesheet">
 </head>
-<body class="body">
+<body class="body shop-page">
 <!--Header-->
 <header>
-    <div id="header" class="header style-03">
-        <div class="topbar border-bottom">
-            <div class="body-container">
-                <div class="topbar-inner">
-                    <div class="topbar-left">
-                        <ul class="top-left-menu">
-                            <li><a href="#">Store Location</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="topbar-right">
-                        <ul class="menu-language">
-                            <li class="menu-item-has-children">
-                                <a href="#">EN</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">EN</a></li>
-                                    <li><a href="#">FR</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">USD</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">USD</a></li>
-                                    <li><a href="#">EUR</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="header-socials">
-                            <li><a href="#"><span class="unsenicon-twitter"></span></a></li>
-                            <li><a href="#"><span class="unsenicon-dribbble"></span></a></li>
-                            <li><a href="#"><span class="unsenicon-behance"></span></a></li>
-                            <li><a href="#"><span class="unsenicon-instagram"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="header" class="header style-02 header-absolute">
         <div class="main-header header_sticky border-bottom">
             <div class="body-container">
                 <div class="mega-menu-wapper">
-                    <div class="header-inner">
+                    <div class="header-inner nav-center">
                         <div class="logo">
-                            <a href="index.html"><img src="images/logo.png" alt="image"></a>
+                            <a href="index.html"><img src="images/logo-white.png" alt="image"></a>
                         </div>
-                        <div class="header-nav">
+                        <div class="header-nav ">
                             <a href="#" data-id="#nt_menu_canvas" class="push_side open-menu push-menu-btn"><span
                                     class="unsenicon-menu"></span></a>
                             <div class="nav-content">
@@ -533,10 +496,13 @@
                                                     <h5 class="title">SINGLE POST</h5>
                                                     <ul>
                                                         <li><a href="single-blog-one-column.html">One Column</a></li>
-                                                        <li><a href="single-blog-prallax-image.html">Parallax Image</a></li>
+                                                        <li><a href="single-blog-prallax-image.html">Parallax Image</a>
+                                                        </li>
                                                         <li><a href="single-blog-sidebar.html">Sidebar</a></li>
-                                                        <li><a href="single-blog-simple-title.html">Simple Title</a></li>
-                                                        <li><a href="single-blog-sticky-title.html">Sticky Title</a></li>
+                                                        <li><a href="single-blog-simple-title.html">Simple Title</a>
+                                                        </li>
+                                                        <li><a href="single-blog-sticky-title.html">Sticky Title</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-8">
@@ -1194,415 +1160,424 @@
 </header>
 <!--/Header-->
 <!--Content-->
-<div class="site-content blog-page blog-content blog-grid">
-    <div class="container">
-        <div class="page-head tc">
+<div class="site-content shop-content shop-list sidebar-full">
+    <div class="page-head shop-page-head tc lazyload mb__40" data-bgset="images/shop1.jpg">
+        <div class="container">
             <div class="content">
-                <h3 class="page-title">Blog</h3>
+                <h3 class="page-title shop-title">Shop</h3>
                 <div class="breadcrumb-wrap">
-                    <a href="index.html">Home</a> > <span>Blog</span>
+                    <a href="index.html">Home</a> > <span>Shop</span>
                 </div>
             </div>
+            <ul class="list-categories tc">
+                <li><a href="#" class="selected">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Shirts & Blouses</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Sweaters</a></li>
+            </ul>
         </div>
-        <div class="main-content mb__60">
-            <div class="blog-tabs tab-section">
-                <div class="unsen-tabs">
-                    <div class="tab-header">
-                        <ul class="tab-list blog-control">
-                            <li class="tab-item">
-                                <a class="js_tab active" data-tab="tab-all" href="#">All</a>
-                            </li>
-                            <li class="tab-item">
-                                <a class="js_tab" data-tab="tab-design" href="#">Design</a>
-                            </li>
-                            <li class="tab-item">
-                                <a class="js_tab" data-tab="tab-all" href="#">Decoration</a>
-                            </li>
-                            <li class="tab-item">
-                                <a class="js_tab" data-tab="tab-design" href="#">Life Style</a>
-                            </li>
-                            <li class="tab-item">
-                                <a class="js_tab" data-tab="tab-all" href="#">Inspiration</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tabs-container">
-                        <div class="tab-element opened" id="tab-all">
-                            <div class="tab-content">
-                                <div class="list-blogs row">
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-play"></span></span>
-                                                <a href="#"><img src="images/blog16.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-picture"></span></span>
-                                                <a href="#"><img src="images/blog17.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog18.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog18.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-play"></span></span>
-                                                <a href="#"><img src="images/blog16.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-picture"></span></span>
-                                                <a href="#"><img src="images/blog17.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog17.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog18.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-play"></span></span>
-                                                <a href="#"><img src="images/blog16.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="blog-loadmore load-more tc">
-                                    <a href="#"><span class="unsenicon-circular-arrow"></span> Load more...</a>
-                                </div>
+    </div>
+    <div class="container">
+        <div class="main-content mb__40">
+            <div class="shop-before-control">
+                <div class="filter-wrap unsen-dropdown">
+                    <a href="#" class="filter-button" data-dropdown="unsen-dropdown"><span class="unsenicon-filter"></span> Filter</a>
+                    <div class="sidebar sidebar-shop filter-content content-dropdown">
+                        <div class="widget widget-product-categories">
+                            <h5 class="widget-title">CATEGORIES</h5>
+                            <div class="widget-inner">
+                                <ul class="list-categories">
+                                    <li><a href="#">Top</a></li>
+                                    <li><a href="#">Shirts & Blouses</a></li>
+                                    <li><a href="#">Jeans</a></li>
+                                    <li><a href="#">Sweaters</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="tab-element" id="tab-design">
-                            <div class="tab-content">
-                                <div class="list-blogs row">
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog18.jpg" alt="image"></a>
+                        <div class="widget widget-filter-price has-content">
+                            <h3 class="widget-title">Prices</h3>
+                            <div class="widget-inner">
+                                <fieldset class="filter-price">
+                                    <div class="price-field">
+                                        <input type="range" min="0" max="790" value="123" id="lower">
+                                        <input type="range" min="110" max="800" value="666" id="upper">
+                                    </div>
+                                    <div class="price-wrap">
+                                        <span class="price-title">Range:</span>
+                                        <div class="price-container">
+                                            <div class="price-wrap-child price-wrap-1">
+                                                <label for="one">$</label>
+                                                <input id="one">
                                             </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
+                                            <div class="price-wrap-child price-wrap_line">-</div>
+                                            <div class="price-wrap-child price-wrap-2">
+                                                <label for="two">$</label>
+                                                <input id="two">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog17.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-play"></span></span>
-                                                <a href="#"><img src="images/blog16.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-picture"></span></span>
-                                                <a href="#"><img src="images/blog18.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-play"></span></span>
-                                                <a href="#"><img src="images/blog16.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-picture"></span></span>
-                                                <a href="#"><img src="images/blog17.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog18.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-
-                                            <div class="blog-thumb">
-                                                <a href="#"><img src="images/blog16.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="blog-inner">
-                                            <div class="blog-thumb">
-                                                <span class="blog-type"><span class="unsenicon-play"></span></span>
-                                                <a href="#"><img src="images/blog17.jpg" alt="image"></a>
-                                            </div>
-                                            <div class="blog-info">
-                                                    <span class="categories"><a href="#">FASHION</a>, <a
-                                                            href="#">LIFE STYLE</a></span>
-                                                <h2 class="blog-title"><a href="#">Black Glasses For The Summer</a></h2>
-                                                <div class="blog-metas">
-                                                            <span class="author"><span
-                                                                    class="unsenicon-user icon"></span> By: admin</span>
-                                                    <span class="comment"><span
-                                                            class="unsenicon-comment icon"></span> 2 comments</span>
-                                                </div>
-                                                <a href="#" class="read-more">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="blog-loadmore load-more">
-                                    <a href="#"><span class="unsenicon-circular-arrow"></span> Load more...</a>
-                                </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="widget widget-filter-color">
+                            <h5 class="widget-title">COLOR</h5>
+                            <div class="widget-inner">
+                                <ul class="list-color">
+                                    <li><a href="#" class="black">Black</a></li>
+                                    <li><a href="#" class="orange selected">Orange</a></li>
+                                    <li><a href="#" class="blue">Blue</a></li>
+                                    <li><a href="#" class="pink">Light Pink</a></li>
+                                    <li><a href="#" class="brown">Brown</a></li>
+                                    <li><a href="#" class="red">Red</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget widget-filter-size">
+                            <h5 class="widget-title">Size</h5>
+                            <div class="widget-inner">
+                                <ul class="list-size">
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">XL</a></li>
+                                    <li><a href="#">XXL</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="right-content tr">
+                    <div class="product-control">
+                        <div class="list-control list-control-dk" data-tab="dk">
+                            <a href="#" class="grid-mode-2" data-col="2"><span class="unsenicon-grid-2"></span></a>
+                            <a href="#" class="grid-mode-3" data-col="3"><span class="unsenicon-grid-3"></span></a>
+                            <a href="#" class="grid-mode-4" data-col="4"><span class="unsenicon-grid-4"></span></a>
+                            <a href="#" class="list-mode active" data-col="1"><span class="unsenicon-list"></span></a>
+                        </div>
+                        <div class="list-control list-control-tb" data-dev="tb">
+                            <a href="#" class="grid-mode-2" data-col="2"><span class="unsenicon-grid-2"></span></a>
+                            <a href="#" class="grid-mode-3" data-col="3"><span class="unsenicon-grid-3"></span></a>
+                            <a href="#" class="list-mode active" data-col="1"><span class="unsenicon-list"></span></a>
+                        </div>
+                        <div class="list-control list-control-mb" data-dev="mb">
+                            <a href="#" class="grid-mode-2" data-col="2"><span class="unsenicon-grid-2"></span></a>
+                            <a href="#" class="list-mode active" data-col="1"><span class="unsenicon-list"></span></a>
+                        </div>
+                    </div>
+                    <div class="select-type-product">
+                        <select name="type" id="type-product">
+                            <option value="featured">Featured</option>
+                            <option value="top-rate">Top Rate</option>
+                            <option value="bestseller">Bestseller</option>
+                            <option value="sale">Sale</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-products-list product-lists products-type-list list-product-be-change row">
+                <div class="product-item list product-variable col-12">
+                    <div class="product-inner">
+                        <div class="product-thumbnail">
+                            <a href="single-product-simple.html" class="thumb-img">
+                                <img src="images/fashion/product9.jpg" alt="image" class="lazyload">
+                            </a>
+                            <div class="wishlist"><a href="#"><span
+                                    class="unsenicon-heart"></span></a></div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="quickshop-button"><a href="#"><span
+                                        class="text">Quick shop</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                            <div class="top-variable">
+                                <ul class="list-size    ">
+                                    <li><a href="#">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">XL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="top-info">
+                                <h4 class="product-title">
+                                    <a href="single-product-simple.html" class="text">Collar Popover Tunic</a>
+                                </h4>
+                                <span class="price">$330.00</span>
+                                <div class="group-variable">
+                                    <ul class="list-color">
+                                        <li><a href="#" class="blue selected"></a></li>
+                                        <li><a href="#" class="red"></a></li>
+                                        <li><a href="#" class="yellow"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product-des">Go sporty this summer with this vintage navy and white
+                                    striped
+                                    v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks
+                                    for a
+                                    stylish sporty vibe.
+                                </div>
+                            </div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="quickshop-button"><a href="#"><span
+                                        class="text">Quick shop</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item list product-variable col-12">
+                    <div class="product-inner">
+                        <div class="product-thumbnail">
+                            <a href="single-product-simple.html" class="thumb-img">
+                                <img src="images/fashion/product8.jpg" alt="image" class="lazyload">
+                            </a>
+                            <div class="wishlist"><a href="#"><span
+                                    class="unsenicon-heart"></span></a></div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="quickshop-button"><a href="#"><span
+                                        class="text">Quick shop</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                            <div class="top-variable">
+                                <ul class="list-size    ">
+                                    <li><a href="#">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">XL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="top-info">
+                                <h4 class="product-title">
+                                    <a href="single-product-simple.html" class="text">Collar Popover Tunic</a>
+                                </h4>
+                                <span class="price">$330.00</span>
+                                <div class="group-variable">
+                                    <ul class="list-color">
+                                        <li><a href="#" class="blue selected"></a></li>
+                                        <li><a href="#" class="red"></a></li>
+                                        <li><a href="#" class="yellow"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product-des">Go sporty this summer with this vintage navy and white
+                                    striped
+                                    v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks
+                                    for a
+                                    stylish sporty vibe.
+                                </div>
+                            </div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="quickshop-button"><a href="#"><span
+                                        class="text">Quick shop</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item list col-12">
+                    <div class="product-inner">
+                        <div class="product-thumbnail">
+                            <a href="single-product-simple.html" class="thumb-img">
+                                <img src="images/fashion/product3.jpg" alt="image" class="lazyload">
+                            </a>
+                            <div class="wishlist"><a href="#"><span
+                                    class="unsenicon-heart"></span></a></div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="add-to-cart"><a href="#"><span
+                                        class="text">Add to cart</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="top-info">
+                                <h4 class="product-title">
+                                    <a href="single-product-simple.html" class="text">Collar Popover Tunic</a>
+                                </h4>
+                                <span class="price">$330.00</span>
+                                <div class="product-des">Go sporty this summer with this vintage navy and white
+                                    striped
+                                    v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks
+                                    for a
+                                    stylish sporty vibe.
+                                </div>
+                            </div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="add-to-cart"><a href="#"><span
+                                        class="text">Add to cart</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item list product-variable col-12">
+                    <div class="product-inner">
+                        <div class="product-thumbnail">
+                            <a href="single-product-simple.html" class="thumb-img">
+                                <img src="images/fashion/product2.jpg" alt="image" class="lazyload">
+                            </a>
+                            <div class="wishlist"><a href="#"><span
+                                    class="unsenicon-heart"></span></a></div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="quickshop-button"><a href="#"><span
+                                        class="text">Quick shop</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                            <div class="top-variable">
+                                <ul class="list-size    ">
+                                    <li><a href="#">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">XL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="top-info">
+                                <h4 class="product-title">
+                                    <a href="single-product-simple.html" class="text">Collar Popover Tunic</a>
+                                </h4>
+                                <span class="price">$330.00</span>
+                                <div class="group-variable">
+                                    <ul class="list-color">
+                                        <li><a href="#" class="blue selected"></a></li>
+                                        <li><a href="#" class="red"></a></li>
+                                        <li><a href="#" class="yellow"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product-des">Go sporty this summer with this vintage navy and white
+                                    striped
+                                    v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks
+                                    for a
+                                    stylish sporty vibe.
+                                </div>
+                            </div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="quickshop-button"><a href="#"><span
+                                        class="text">Quick shop</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item list col-12">
+                    <div class="product-inner">
+                        <div class="product-thumbnail">
+                            <a href="single-product-simple.html" class="thumb-img">
+                                <img src="images/fashion/product7.jpg" alt="image" class="lazyload">
+                            </a>
+                            <div class="wishlist"><a href="#"><span
+                                    class="unsenicon-heart"></span></a></div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="add-to-cart"><a href="#"><span
+                                        class="text">Add to cart</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="top-info">
+                                <h4 class="product-title">
+                                    <a href="single-product-simple.html" class="text">Collar Popover Tunic</a>
+                                </h4>
+                                <span class="price">$330.00</span>
+                                <div class="product-des">Go sporty this summer with this vintage navy and white
+                                    striped
+                                    v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks
+                                    for a
+                                    stylish sporty vibe.
+                                </div>
+                            </div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="add-to-cart"><a href="#"><span
+                                        class="text">Add to cart</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item list col-12">
+                    <div class="product-inner">
+                        <div class="product-thumbnail">
+                            <a href="single-product-simple.html" class="thumb-img">
+                                <img src="images/fashion/product6.jpg" alt="image" class="lazyload">
+                            </a>
+                            <div class="wishlist"><a href="#"><span
+                                    class="unsenicon-heart"></span></a></div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="add-to-cart"><a href="#"><span
+                                        class="text">Add to cart</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="top-info">
+                                <h4 class="product-title">
+                                    <a href="single-product-simple.html" class="text">Collar Popover Tunic</a>
+                                </h4>
+                                <span class="price">$330.00</span>
+                                <div class="product-des">Go sporty this summer with this vintage navy and white
+                                    striped
+                                    v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks
+                                    for a
+                                    stylish sporty vibe.
+                                </div>
+                            </div>
+                            <div class="group-buttons">
+                                <div class="quickview-button"><a href="#"><span
+                                        class="text">Quick view</span><span
+                                        class="unsenicon-eye icon"></span></a></div>
+                                <div class="add-to-cart"><a href="#"><span
+                                        class="text">Add to cart</span><span
+                                        class="unsenicon-shopping-bag icon"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination tc">
+                <ul class="list-pagination">
+                    <li><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#"><span class="unsenicon-long-arrow-right"></span></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
