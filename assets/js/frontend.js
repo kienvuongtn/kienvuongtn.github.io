@@ -191,12 +191,15 @@
                   tab             = _this.data('tab'),
                   _se             = _this.closest('.tab-section'),
                   _tabActive      = _se.find('.tab-header .active'),
+                  _parent = _se.find('.tab-header .parent-active'),
                   _contentActive  = _se.find('.tabs-container .opened'),
                   _currentContent = $('#' + tab),
                   el              = _currentContent.find('.js_carousel');
 
             _tabActive.removeClass('active');
+            _parent.removeClass('parent-active');
             _this.addClass('active');
+            _this.parent().addClass('parent-active');
 
             _contentActive.removeClass('opened');
             _currentContent.addClass('opened');
@@ -205,6 +208,35 @@
             el.flickity('resize');
         });
     };
+
+    /*===============
+        Accordion
+    =================*/
+    if ( $( '.unsen-accordion' ).length ) {
+        $( document ).on( 'click', '.unsen-accordion .item .head > a', function ( e ) {
+            e.preventDefault();
+            let _this      = $( this ),
+                parent     = _this.closest( '.item' ),
+                parent_top = _this.closest( '.unsen-accordion' ),
+                el         = _this.closest( '.nt_section' ),
+                time       = 300,
+                time2      = time + 50;
+
+            if ( el.length === 0 ) {
+                el = _this.closest( '.accordion-section' )
+            }
+            parent.addClass( 'opened' )
+            if ( parent.hasClass( 'active' ) ) {
+                parent.removeClass( 'active' );
+                parent.find( '.content' ).slideUp( time );
+            } else {
+                parent_top.find( '.item' ).removeClass( 'active' );
+                parent.addClass( 'active' );
+                parent_top.find( '.content' ).slideUp( 150 );
+                parent.find( '.content' ).stop( true, true ).slideDown( time );
+            }
+        } );
+    }
     /*===============
         DROPDOWN
     =================*/
@@ -323,8 +355,23 @@
             src: $('.quick-view-content')[ 0 ],
             type: 'inline'
         },
-        closeBtnInside: true
+        closeBtnInside: true,
+        callbacks: {
+            beforeOpen: function () {
+                //this.st.mainClass = 'mfp-move-horizontal';
+            },
+            open: function () {
+                //$carousel.flickity('destroy')
+                const el = $('.quick-view-content .product-thumbnail'), option = el.attr("data-flickity") || '{}';
+                el.flickity('destroy');
+                el.flickity(JSON.parse(option));
+            },
+            close: function () {
+                $('#content_quickview').empty();
+            }
+        },
     });
+
     $('.quickshop-button').magnificPopup({
         items: {
             src: $('.quick-shop-content')[ 0 ],
@@ -365,7 +412,7 @@
                         $this.closest('.main-content').find('.list-product-be-change').removeClass('products-type-list').addClass('products-type-grid').find('.product-item').addClass('col-4');
                     }
                     $this.addClass('active').siblings().removeClass('active');
-                } else  {
+                } else {
                     $this.closest('.main-content').find('.list-product-be-change').find('.product-item').siblings().removeClass('list col-3 col-4 col-6 col-12');
                     if ( column == 1 ) {
                         $this.closest('.main-content').find('.list-product-be-change').removeClass('products-type-grid').addClass('products-type-list').find('.product-item').addClass('list col-12');
@@ -379,44 +426,152 @@
         }
     };
 
-    $.fn.slider_range_price = function () {
-        // Price filter
-        var lowerSlider = document.querySelector('#lower');
-        var  upperSlider = document.querySelector('#upper');
+    //$.fn.slider_range_price = function () {
+    //    // Price filter
+    //    var lowerSlider = document.querySelector('#lower');
+    //    var  upperSlider = document.querySelector('#upper');
+    //
+    //    document.querySelector('#two').value=upperSlider.value;
+    //    document.querySelector('#one').value=lowerSlider.value;
+    //
+    //    var  lowerVal = parseInt(lowerSlider.value);
+    //    var upperVal = parseInt(upperSlider.value);
+    //
+    //    upperSlider.oninput = function () {
+    //        lowerVal = parseInt(lowerSlider.value);
+    //        upperVal = parseInt(upperSlider.value);
+    //
+    //        if (upperVal < lowerVal + 4) {
+    //            lowerSlider.value = upperVal - 4;
+    //            if (lowerVal == lowerSlider.min) {
+    //                upperSlider.value = 4;
+    //            }
+    //        }
+    //        document.querySelector('#two').value=this.value
+    //    };
+    //
+    //    lowerSlider.oninput = function () {
+    //        lowerVal = parseInt(lowerSlider.value);
+    //        upperVal = parseInt(upperSlider.value);
+    //        if (lowerVal > upperVal - 4) {
+    //            upperSlider.value = lowerVal + 4;
+    //            if (upperVal == upperSlider.max) {
+    //                lowerSlider.value = parseInt(upperSlider.max) - 4;
+    //            }
+    //        }
+    //        document.querySelector('#one').value=this.value
+    //    };
+    //}
 
-        document.querySelector('#two').value=upperSlider.value;
-        document.querySelector('#one').value=lowerSlider.value;
+    /*Single Thumbnail*/
+    $.fn.unsenSingleProductThumbnail = function () {
+        if ( $(this).length ) {
 
-        var  lowerVal = parseInt(lowerSlider.value);
-        var upperVal = parseInt(upperSlider.value);
+            let $p_btns = $('.p_group_btns')
 
-        upperSlider.oninput = function () {
-            lowerVal = parseInt(lowerSlider.value);
-            upperVal = parseInt(upperSlider.value);
+            function initThumbnailsMarkup($galleries, $navContainer, navClass) {
+                let markup  = [],
+                    e_imgnv = $('.p-nav.ratio_imgtrue').length > 0;
 
-            if (upperVal < lowerVal + 4) {
-                lowerSlider.value = upperVal - 4;
-                if (lowerVal == lowerSlider.min) {
-                    upperSlider.value = 4;
-                }
+                $galleries.find('.p-item:not(.is_varhide)').each(function () {
+                    let $this  = $(this),
+                        bgset  = $this.data('bgset'),
+                        mdtype = $this.data('mdtype'),
+                        mdid   = $this.data('mdid'),
+                        ratio  = $this.data('ratio'),
+                        style  = '',
+                        icon   = 'hide';
+
+                    if ( mdtype === 'video' ) {
+                        icon = 'las la-play';
+                    } else if ( mdtype === 'external_video' ) {
+                        icon = 'lab la-youtube';
+                    } else if ( mdtype === 'model' ) {
+                        icon = 'las la-cube';
+                    }
+
+                    if ( e_imgnv ) {
+                        style = ' style="padding-top:' + 1 / ratio * 100 + '%"';
+                    }
+
+                    markup.push('<div class="' + navClass + 'col-3 n-item" data-mdid="' + mdid + '" data-mdtype="' + mdtype + '"><span class="nt_bg_lz lazyload" data-bgset="' + bgset + '"' + style + '><img src="' + bgset + '" alt="image"></span></div>');
+                });
+
+                $navContainer.empty().append(markup.join(''));
+                $navContainer.unsenRefresh_flickity();
+                $navContainer.addClass('p-nav-ready');
             }
-            document.querySelector('#two').value=this.value
-        };
 
-        lowerSlider.oninput = function () {
-            lowerVal = parseInt(lowerSlider.value);
-            upperVal = parseInt(upperSlider.value);
-            if (lowerVal > upperVal - 4) {
-                upperSlider.value = lowerVal + 4;
-                if (upperVal == upperSlider.max) {
-                    lowerSlider.value = parseInt(upperSlider.max) - 4;
+            $(this).each(function () {
+                let $el                   = $(this).find('.p-nav'),
+                    $mainGallery          = $(this).find('.p-thumb'),
+                    navClass              = ($('.thumb_left').length > 0 || $('.thumb_right').length > 0) ? 'col-lg-12 ' : '',
+                    $col_nav              = $('.col_nav'),
+                    timer                 = 400,
+                    includedModelOrVideos = $mainGallery.find('[data-pr-md-tp-model]').length > 0 || $mainGallery.find('[data-pr-md-tp-video]').length > 0;
+
+                $mainGallery.each(function (index) {
+                    initThumbnailsMarkup($(this), $el.length === 1 ? $el : $el.eq(index), navClass);
+                });
+
+                if ( includedModelOrVideos ) {
+                    $mainGallery.on('select.flickity', function (event, index) {
+                        let $selectedSlide = $mainGallery.find('.is-selected'),
+                            mediaType      = $selectedSlide.data('mdtype');
+
+                        $('.p-thumb [data-pr-md-tp-video] , .p-thumb [data-pr-md-tp-model]').trigger('mediaHidden');
+
+                        $p_btns.removeClass('nt_hide nt_hide_2');
+
+                        if ( ['video', 'external_video', 'model'].includes(mediaType) ) {
+                            if ( mediaType === 'model' ) {
+                                $p_btns.addClass('nt_hide_2');
+                                $selectedSlide.find('[data-pr-md-tp-model]').trigger('mediaVisible');
+                            } else {
+                                $p_btns.addClass('nt_hide');
+                                $selectedSlide.find('[data-pr-md-tp-video]').trigger('mediaVisible');
+                            }
+                        }
+                    });
                 }
+
+                $col_nav.find('.btn_pnav_next, .btn_pnav_prev').off('click').on('click', function (e) {
+                    console.log('thumb left click');
+                    let $this            = $(this),
+                        slider_height    = $el.find('.flickity-slider').height(),
+                        navHeight        = $el.height(),
+                        navCellHeight    = slider_height / $el.find('.n-item').length,
+                        currentScrollTop = $el.scrollTop();
+                    if ( ($this.hasClass('btn_pnav_prev') && currentScrollTop <= 0) || ($this.hasClass('btn_pnav_next') && currentScrollTop >= slider_height - navHeight) ) return;
+                    let scrollY = ($this.hasClass('btn_pnav_next')) ? currentScrollTop + navCellHeight + 40 : currentScrollTop - navCellHeight - 40;
+                    $el.stop().animate({
+                        scrollTop: scrollY
+                    }, timer);
+                });
+
+            });
+
+        }
+    };
+    setTimeout(() => $('.unsen_product_thumnb_slide').unsenSingleProductThumbnail(), 100);
+    $.fn.unsenRefresh_flickity = function () {
+        $(this).flickity(JSON.parse($(this).attr("data-flickity") || $(this).attr("data-flickityjs") || '{}'));
+        return $(this);
+    };
+
+    $.fn.unsenFlickityResponsive = function (bl) {
+        if ( typeof ($.fn.flickity) !== 'undefined' ) {
+            let $this = $(this);
+            if ( bl ) {
+                $this.find('.swatch__list_js.lazyloaded').each(function () {
+                    $this.flickity('resize')
+                });
             }
-            document.querySelector('#one').value=this.value
-        };
+            $this.find('.swatch__list_js').on('lazyincluded', function (e) {
+                $this.flickity('resize')
+            });
+        }
     }
-
-
     /*===============
        ADD TO CART
     =================*/
@@ -566,12 +721,11 @@
     $(window).resize(function () {
         $('.unsen-tabs .tab-list .tab-item a').catTabs();
         $('.product-control').unsenShopMode();
-        $('.filter-price').slider_range_price();
+
     });
     window.addEventListener("load", function load() {
         unsen_resize_mega_menu();
         $('.product-control').unsenShopMode();
-        $('.filter-price').slider_range_price();
         $('.unsen-tabs .tab-list .tab-item a').catTabs();
         /**
          * remove listener, no longer needed

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'unsen';
-  src:  url('fonts/unsen.eot?so8scw');
-  src:  url('fonts/unsen.eot?so8scw#iefix') format('embedded-opentype'),
-    url('fonts/unsen.ttf?so8scw') format('truetype'),
-    url('fonts/unsen.woff?so8scw') format('woff'),
-    url('fonts/unsen.svg?so8scw#unsen') format('svg');
+  src:  url('fonts/unsen.eot?dos9c7');
+  src:  url('fonts/unsen.eot?dos9c7#iefix') format('embedded-opentype'),
+    url('fonts/unsen.ttf?dos9c7') format('truetype'),
+    url('fonts/unsen.woff?dos9c7') format('woff'),
+    url('fonts/unsen.svg?dos9c7#unsen') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -198,4 +198,7 @@
 }
 .unsenicon-behance:before {
   content: "\eaa8";
+}
+.unsenicon-sidebar:before {
+  content: "\ea7b";
 }
