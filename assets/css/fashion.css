@@ -73,7 +73,6 @@
     padding-left: 195px;
 }
 .slideshow-01 .slide-content .content {
-    text-align: center;
     max-width: 400px;
 }
 .item-slide .title {
@@ -132,12 +131,22 @@
 }
 .slideshow .flickity-page-dots {
     bottom: 60px;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .slideshow .flickity-page-dots .dot {
     background-color: #a19791;
     opacity: 1;
 }
-.flickity-page-dots .dot {
+.slideshow .flickity-page-dots .dot.is-selected,
+.flickity-page-dots .dot.is-selected {
     background-color: #000;
 }
 .slideshow-02 {
@@ -225,6 +234,30 @@
     -o-transform: scale(1);
     transform: scale(1);
 }
+.slideshow-04 .flickity-page-dots {
+    left: 13%;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.slideshow-04 .item-slide .title {
+    font-size: 70px;
+    line-height: 85px;
+    font-weight: 300;
+    margin-bottom: 33px;
+}
+.slideshow-04 .item-slide .title > span {
+    display: block;
+}
+.slideshow-04 .item-slide .button {
+    text-transform: uppercase;
+    line-height: 45px;
+    margin: 0 10px 0 0;
+    font-size: 13px;
+    width: 154px;
+}
 .unsen-banner.style-01 .banner-content {
     position: absolute;
     z-index: 1;
@@ -237,11 +270,22 @@
     margin-left: 50px;
 }
 .unsen-banner .inner {
-    display: inline-block;
+    display: block;
     vertical-align: top;
     overflow: hidden;
     max-width: 100%;
     position: relative;
+}
+.unsen-banner .content-absolute {
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .unsen-banner .hover-element {
     -webkit-transition: 0.5s ease 0s;
@@ -261,8 +305,11 @@
     font-size: 12px;
     color: #000;
     text-transform: uppercase;
-    letter-spacing: 3.6px;
     margin-bottom: 10px;
+}
+.unsen-banner.style-01 .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
 }
 .unsen-banner .title {
     font-size: 45px;
@@ -270,6 +317,10 @@
     color: #000;
     line-height: 45px;
     margin-bottom: 20px;
+}
+.unsen-banner .subtitle > span,
+.unsen-banner .title > span {
+    display: block;
 }
 .unsen-banner .button {
     font-size: 14px;
@@ -281,8 +332,7 @@
     vertical-align: top;
     position: relative;
 }
-.unsen-banner.style-01 .button::before,
-.unsen-banner.style-02 .button::before {
+.unsen-banner .button::before {
     left: 0;
     right: 0;
     height: 2px;
@@ -303,8 +353,7 @@
     -o-transform: scale(0);
     transform: scale(0);
 }
-.unsen-banner.style-01 .button:hover::before,
-.unsen-banner.style-02 .button:hover::before {
+.unsen-banner .button:hover::before {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -342,9 +391,6 @@
 .unsen-banner.style-02 .button {
     padding: 0;
 }
-.unsen-banner.style-03 {
-
-}
 .unsen-banner.style-03 .inner {
     height: 695px;
     display: block;
@@ -379,6 +425,39 @@
     color: #fff;
     background-color: transparent;
     border: none;
+    position: relative;
+    padding: 8px 0;
+}
+.unsen-banner.style-03 .button::before {
+    display: none;
+}
+.unsen-banner.style-03 .button::after {
+    height: 2px;
+    content: '';
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.5s ease-in-out 0s;
+    -moz-transition: 0.5s ease-in-out 0s;
+    -ms-transition: 0.5s ease-in-out 0s;
+    -o-transition: 0.5s ease-in-out 0s;
+    transition: 0.5s ease-in-out 0s;
+    background-color: #fff;
+}
+.unsen-banner.style-03 .button:hover::after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
 }
 .unsen-banner.style-04 .banner-content {
     text-align: center;
@@ -412,6 +491,87 @@
 .unsen-banner.style-04 .button:hover {
     color: #fff;
     background-color: #000;
+}
+.unsen-banner.style-04 .button::before {
+    display: none;
+}
+.unsen-banner.style-05 .banner-content {
+    left: 7%;
+}
+.unsen-banner.style-05 .subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+}
+.unsen-banner.style-05 .title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 16px;
+}
+.unsen-banner.style-05 .button {
+    padding: 0;
+    font-size: 13px;
+}
+.unsen-banner.style-06 .banner-content {
+    left: 9.6%;
+}
+.unsen-banner.style-06 .title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.unsen-banner.style-07 .banner-content {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.unsen-banner.style-07 .b_height {
+    background-attachment: fixed;
+}
+.unsen-banner.style-07 .head {
+    margin-bottom: 38px;
+}
+.unsen-banner.style-07 .head > .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #000;
+    border: solid 2px #000;
+    width: 90px;
+    height: 90px;
+    line-height: 86px;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.unsen-banner.style-07 .head .text {
+    font-size: 12px;
+    color: #000;
+    border-bottom: solid 1px #000;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 26px;
+}
+.unsen-banner.style-07 .subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.unsen-banner.style-07 .title {
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+.unsen-banner.style-07 .button {
+    font-size: 13px;
+    padding: 0;
 }
 @media (max-width: 1600px) {
     .slideshow .flickity-prev-next-button {
@@ -451,13 +611,23 @@
     .slideshow .flickity-page-dots {
         bottom: 30px;
     }
+    
+    .slideshow-04 .slide-content {
+        padding-left: 100px;
+    }
+    .slideshow-04 .item-slide .title {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 1024px) {
     .slideshow {
         padding-top: 0;
     }
     
-    .slideshow-02 .item-slide .title {
+    .slideshow-02 .item-slide .title,
+    .slideshow-04 .item-slide .title {
         font-size: 40px;
         line-height: 40px;
     }
@@ -508,20 +678,44 @@
     .slideshow-03 .item-slide .button {
         font-size: 14px;
     }
+    .slideshow-04 .item-slide .button {
+        font-size: 14px;
+        width: auto;
+        padding: 0 20px;
+        line-height: 40px;
+    }
     .unsen-banner.style-01 .banner-content {
         bottom: 40px;
     }
     .row-banner .banner-02 {
         margin-top: 40px;
     }
-    
+    .unsen-banner.style-02 .banner-content > span {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .unsen-banner.style-02 .des {
+        font-size: 22px;
+        line-height: 32px;
+    }
 }
 @media (max-width: 575px) {
-    .item-slide .button {
-        width: auto;
-        min-width: 1px;
+    .slideshow .flickity-button,
+    .slideshow .flickity-page-dots {
+        display: none;
     }
-    
+    .item-slide .title {
+        margin-bottom: 0;
+    }
+    .item-slide .subtitle {
+        display: none;
+    }
+    .item-slide .button {
+         width: auto;
+         min-width: 1px;
+        line-height: 38px;
+        margin-top: 10px;
+     }
     .slideshow .flickity-prev-next-button {
         font-size: 12px;
         width: 36px;
@@ -535,11 +729,14 @@
         right: 15px;
     }
     
+    .slideshow .item-slide .subtitle,
     .slideshow-02 .item-slide .subtitle {
         font-size: 14px;
     }
     
-    .slideshow-02 .item-slide .title {
+    .slideshow .item-slide .title,
+    .slideshow-02 .item-slide .title,
+    .slideshow-04 .item-slide .title {
         font-size: 36px;
         line-height: 36px;
     }
@@ -567,22 +764,19 @@
     }
 }
 @media (max-width: 480px) {
-    .slideshow-02 .item-slide .title {
-        font-size: 24px;
-        line-height: 24px;
-    }
     
-    .slideshow-02 .item-slide .subtitle {
-        display: none;
+    .slideshow .item-slide .title ,
+    .slideshow-02 .item-slide .title,
+    .slideshow-04 .item-slide .title {
+        font-size: 24px;
+        line-height: 30px;
     }
+    .slideshow .item-slide .subtitle,
+    .slideshow-02 .item-slide .subtitle,
     .slideshow-03 .item-slide .subtitle {
         display: none;
     }
-    .slideshow-03 .item-slide .title {
-        font-size: 26px;
-        line-height: 30px;
-    }
-    .slideshow-03 .item-slide .button {
+    .slideshow .item-slide .button {
         font-size: 14px;
     }
 }

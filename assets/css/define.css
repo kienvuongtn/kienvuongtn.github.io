@@ -299,6 +299,17 @@ button:focus {
 .flickity-button:active {
     opacity: 1;
 }
+.flickity-page-dots {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
 .dots-style-02 .flickity-page-dots .dot {
     width: 28px;
     height: 2px;
@@ -3816,6 +3827,60 @@ body.overlay-opened {
         transform: translateX(0);
     }
 }
+.effect_plus_zoom {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+.effect_plus_zoom > *:not(img) {
+    position: relative;
+    z-index: 3;
+}
+.effect_plus_zoom::before,
+.effect_plus_zoom::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transition: 0.5s ease-in-out 0s;
+    -moz-transition: 0.5s ease-in-out 0s;
+    -ms-transition: 0.5s ease-in-out 0s;
+    -o-transition: 0.5s ease-in-out 0s;
+    transition: 0.5s ease-in-out 0s;
+ 
+}
+.effect_plus_zoom::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    height: 100%;
+    width: 0;
+}
+.effect_plus_zoom::after {
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+}
+.effect_plus_zoom:hover::before,
+.effect_plus_zoom:hover::after {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
 .p-nav .n-item {
     overflow: hidden;
 }
