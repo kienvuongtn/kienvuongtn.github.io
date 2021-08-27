@@ -30,6 +30,16 @@
         }
     };
 
+    /*===============
+         Countdown
+    =================*/
+    $.fn.unsenCountdown = function () {
+        $( this ).each( function () {
+            $( this ).countdown( $( this ).data( 'date' ), function ( event ) {
+                $( this ).html( event.strftime( '<span class="days"><span class="number">%D</span><span class="text">days</span></span><span class="hours"><span class="number">%H</span><span class="text">hours</span></span> <span class="mins"><span class="number">%M</span><span class="text">mins</span></span><span class="secs"><span class="number">%S</span><span class="text">secs</span></span> ') );
+            } );
+        } );
+    };
 
     /* HOVER PRODUCT */
     $('.unsen-tabs .tab-list a').on("click", function (e) {
@@ -53,6 +63,7 @@
         } else {
             $('.back-to-top').removeClass('show');
         }
+        unsen_resize_mega_menu();
     });
 
     $(document).on('scroll', function () {
@@ -629,6 +640,7 @@
     $(window).ready(function () {
         $('.unsen-tabs .tab-list .tab-item a').catTabs();
         $('.header_sticky').unsen_sticky_header();
+        $('.unsen-countdown .time').unsenCountdown();
         unsen_resize_mega_menu();
         better_equal_elems();
         banner_fixed_height();

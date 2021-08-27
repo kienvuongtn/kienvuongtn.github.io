@@ -82,11 +82,17 @@
     line-height: 70px;
     margin-bottom: 12px;
 }
+.item-slide .title > span {
+    display: block;
+}
 .item-slide .subtitle {
     font-size: 16px;
     color: #000000;
     margin: 0 0 15px;
     text-transform: uppercase;
+}
+.item-slide .subtitle > span {
+    display: block;
 }
 .item-slide .button {
     width: 180px;
@@ -258,6 +264,94 @@
     font-size: 13px;
     width: 154px;
 }
+.slideshow-05 .slide-content .content {
+    max-width: 470px;
+    margin-left: 100px;
+}
+.slideshow-05 .item-slide .subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 4.2px;
+}
+
+.slideshow-05 .item-slide .title {
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 70px;
+}
+.slideshow-05 .item-slide .button {
+    border: solid 2px #000;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 41px;
+    width: 154px;
+    background-color: transparent;
+}
+.slideshow-05 .item-slide .button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.slideshow-06 .slide-content {
+    top: auto;
+    bottom: 120px;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.slideshow-06 .item-slide .subtitle {
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+.slideshow-06 .item-slide .title {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.slideshow-06 .item-slide .button {
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    line-height: 50px;
+    border: none;
+}
+.slideshow-06 .item-slide .button:hover {
+    color: #fff;
+    background-color: #000;
+}
+.slideshow-07 .flickity-page-dots {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+.slideshow-07 .item-slide .content > span {
+    display: block;
+    margin-bottom: 15px;
+}
+.slideshow-07 .item-slide .title {
+    font-size: 80px;
+    line-height: 95px;
+}
+.slideshow-07 .item-slide .button {
+    line-height: 40px;
+    border: solid 1px #000;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 22px;
+    width: auto;
+    padding: 0 40px;
+    margin: 0;
+}
+    /*Banner*/
 .unsen-banner.style-01 .banner-content {
     position: absolute;
     z-index: 1;
@@ -573,6 +667,159 @@
     font-size: 13px;
     padding: 0;
 }
+
+.unsen-banner.style-08 .banner-content {
+    left: 13%;
+}
+.unsen-banner.style-08 .title {
+    font-size: 40px;
+    line-height: 48px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.unsen-banner.style-08 .subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 18px;
+}
+.unsen-banner.style-08 .button {
+    color: #fff;
+    border-color: #fff;
+    font-size: 14px;
+}
+.unsen-banner.style-08 .button::before {
+    background-color: #fff;
+}
+.unsen-banner.style-09 .banner-content {
+    bottom: 60px;
+    top: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.unsen-banner.style-09 .title {
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.unsen-banner.style-09 .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+.unsen-banner.style-09 .button {
+    line-height: 36px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: solid 1px #000;
+    padding: 0 25px;
+}
+.unsen-banner.style-09 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-09 .button::before {
+    display: none;
+}
+.row-banner.style-10 {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+.row-banner.style-10 > div {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+.unsen-banner.style-10 .banner-content {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 40px;
+    left: 45px;
+}
+.unsen-banner.style-10 .title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+.unsen-banner.style-10 .button {
+    padding: 0;
+}
+.row-banner.style-11,
+.row-banner.style-12 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row-banner.style-11 > div,
+.row-banner.style-12 > div {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.unsen-banner.style-11 .banner-content {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    left: 80px;
+    bottom: 60px;
+}
+.unsen-banner.style-11 .title {
+    line-height: 60px;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.unsen-banner.style-11 .button {
+    padding: 0;
+}
+.unsen-banner.style-12 .banner-content {
+    top: auto;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform:  translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 37px;
+}
+.unsen-banner.style-12 .title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 3px;
+    font-weight: 400;
+}
+.unsen-banner.style-12 .button {
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.row-banner.style-13,
+.banner-category,
+.categories-section.style-08 {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+.row-banner.style-13 > div,
+.banner-category > div,
+.categories-section.style-08 > div {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
 @media (max-width: 1600px) {
     .slideshow .flickity-prev-next-button {
         left: 30px;
@@ -615,11 +862,18 @@
     .slideshow-04 .slide-content {
         padding-left: 100px;
     }
-    .slideshow-04 .item-slide .title {
+    .slideshow-04 .item-slide .title,
+    .slideshow-05 .item-slide .title,
+    .slideshow-07 .item-slide .title {
         font-size: 60px;
         line-height: 70px;
         margin-bottom: 20px;
     }
+    .slideshow-05 .slide-content .content {
+        margin-left: 0;
+        max-width: 400px;
+    }
+   
 }
 @media (max-width: 1024px) {
     .slideshow {
@@ -627,11 +881,31 @@
     }
     
     .slideshow-02 .item-slide .title,
-    .slideshow-04 .item-slide .title {
+    .slideshow-04 .item-slide .title,
+    .slideshow-05 .item-slide .title,
+    .slideshow-06 .item-slide .title {
         font-size: 40px;
         line-height: 40px;
     }
-    
+    .slideshow-07 .item-slide .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .slideshow-07 .item-slide .content > span {
+        display: none;
+    }
+    .slideshow-07 .item-slide .button {
+        padding: 0 20px;
+        font-size: 12px;
+        line-height: 34px;
+    }
+    .unsen-banner.style-11 .banner-content {
+        left: 40px;
+        bottom: 30px;
+    }
+    .unsen-banner.style-12 .banner-content {
+        bottom: 25px;
+    }
 }
 @media (max-width: 991px) {
     
@@ -698,6 +972,17 @@
         font-size: 22px;
         line-height: 32px;
     }
+    .unsen-banner.style-08 .banner-content {
+        left: 6%;
+    }
+    .unsen-banner.style-10 .banner-content {
+        left: 15px;
+        bottom: 30px;
+    }
+    .unsen-banner.style-11 .title {
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
 @media (max-width: 575px) {
     .slideshow .flickity-button,
@@ -736,9 +1021,16 @@
     
     .slideshow .item-slide .title,
     .slideshow-02 .item-slide .title,
-    .slideshow-04 .item-slide .title {
+    .slideshow-04 .item-slide .title,
+    .slideshow-05 .item-slide .title,
+    .slideshow-06 .item-slide .title,
+    .slideshow-07 .item-slide .title {
         font-size: 36px;
-        line-height: 36px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .slideshow-06 .slide-content {
+        bottom: 60px;
     }
     
     .slideshow-02 .item-slide .button {
@@ -762,22 +1054,41 @@
         line-height: 30px;
         margin-bottom: 10px;
     }
+    .unsen-banner.style-09 .banner-content {
+        bottom: 30px;
+    }
+    .unsen-banner.style-11 .banner-content {
+        left: 15px;
+        bottom: 15px;
+    }
+    .unsen-banner.style-11 .title {
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 30px;
+    }
 }
 @media (max-width: 480px) {
     
     .slideshow .item-slide .title ,
     .slideshow-02 .item-slide .title,
-    .slideshow-04 .item-slide .title {
+    .slideshow-04 .item-slide .title,
+    .slideshow-05 .item-slide .title,
+    .slideshow-06 .item-slide .title,
+    .slideshow-07 .item-slide .title {
         font-size: 24px;
-        line-height: 30px;
+        line-height: 32px;
     }
     .slideshow .item-slide .subtitle,
     .slideshow-02 .item-slide .subtitle,
-    .slideshow-03 .item-slide .subtitle {
+    .slideshow-03 .item-slide .subtitle,
+    .slideshow-05 .item-slide .subtitle {
         display: none;
     }
     .slideshow .item-slide .button {
         font-size: 14px;
+    }
+    .slideshow-06 .slide-content {
+        bottom: 40px;
     }
 }
 @media (max-width: 360px) {
