@@ -2198,7 +2198,35 @@ body {
     flex: 0 0 42.678%;
     max-width: 42.678%;
 }
-
+.category-item.style-08 .category-thumb .content {
+    bottom: 37px;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    left: 0;
+    right: 0;
+}
+.category-item.style-08 .category-thumb .category-name,
+.category-item.style-08 .category-thumb .category-name:hover {
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    display: block;
+    line-height: 30px;
+    color: #000;
+}
+.category-item.style-08 .category-thumb .button {
+    font-size: 13px;
+    color: #868686;
+    border-bottom: solid 1px #868686;
+}
+.category-item.style-08 .category-thumb .button:hover {
+    color: #000;
+    border-color: #000;
+}
 
 .unsen-testimonial {
     text-align: center;
@@ -2231,13 +2259,15 @@ body {
     color: #000;
     margin-bottom: 0;
 }
-.unsen-testimonial.layout-02 .title {
+.unsen-testimonial.style-02 .title {
     font-size: 34px;
     font-weight: 300;
     margin-bottom: 15px;
     line-height: 40px;
 }
-
+.row-testimonial.layout-02 {
+    background-color: #f7efeb;
+}
 .testimonial-item {
     padding-top: 40px;
 }
