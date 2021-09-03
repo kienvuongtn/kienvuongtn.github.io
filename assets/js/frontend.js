@@ -34,11 +34,11 @@
          Countdown
     =================*/
     $.fn.unsenCountdown = function () {
-        $( this ).each( function () {
-            $( this ).countdown( $( this ).data( 'date' ), function ( event ) {
-                $( this ).html( event.strftime( '<span class="days"><span class="number">%D</span><span class="text">days</span></span><span class="hours"><span class="number">%H</span><span class="text">hours</span></span> <span class="mins"><span class="number">%M</span><span class="text">mins</span></span><span class="secs"><span class="number">%S</span><span class="text">secs</span></span> ') );
-            } );
-        } );
+        $(this).each(function () {
+            $(this).countdown($(this).data('date'), function (event) {
+                $(this).html(event.strftime('<span class="days"><span class="number">%D</span><span class="text">days</span></span><span class="hours"><span class="number">%H</span><span class="text">hours</span></span> <span class="mins"><span class="number">%M</span><span class="text">mins</span></span><span class="secs"><span class="number">%S</span><span class="text">secs</span></span> '));
+            });
+        });
     };
 
     /* HOVER PRODUCT */
@@ -77,6 +77,19 @@
         $('html, body').animate({scrollTop: 0}, 0);
         e.preventDefault();
     });
+
+    /*=====================
+    FULLPAGE
+    =======================*/
+    function unsen_fullpage() {
+        if ( $('#fullpage').length > 0 ) {
+            new fullpage('#fullpage', {
+                navigation: true,
+                scrollOverflow: true,
+                responsiveWidth: 1200,
+            });
+        }
+    }
 
     /*=====================
     GET SCROLLBAR WIDTH
@@ -150,12 +163,43 @@
                     var elem_height = 0;
                     $this.find('.equal-elem').each(function () {
                         var this_elem_h = 0;
-                        this_elem_h = parseFloat($(this).height());
+                        this_elem_h     = parseFloat($(this).height());
                         if ( elem_height < this_elem_h ) {
                             elem_height = this_elem_h;
                         }
                     });
                     $this.find('.equal-elem').height(elem_height);
+                }
+            });
+        }
+    }
+
+    function better_equal_elems_dk() {
+        if ( $(window).width() > 1024 ) {
+            $('.equal-container-dk').each(function () {
+                var $this = $(this);
+                if ( $this.find('.equal-elem').length ) {
+                    $this.find('.equal-elem').css({
+                        'height': 'auto'
+                    });
+                    var elem_height = 0;
+                    $this.find('.equal-elem').each(function () {
+                        var this_elem_h = 0;
+                        this_elem_h     = parseFloat($(this).height());
+                        if ( elem_height < this_elem_h ) {
+                            elem_height = this_elem_h;
+                        }
+                    });
+                    $this.find('.equal-elem').height(elem_height);
+                }
+            });
+        } else if ( $(window).width() <= 1024 ) {
+            $('.equal-container-dk').each(function () {
+                var $this = $(this);
+                if ( $this.find('.equal-elem').length ) {
+                    $this.find('.equal-elem').css({
+                        'height': 'auto'
+                    });
                 }
             });
         }
@@ -168,7 +212,7 @@
     function banner_fixed_height() {
         if ( $(window).width() > 0 ) {
             $('.unsen-banner').each(function () {
-                var $this = $(this),
+                var $this     = $(this),
                     $b_height = $this.find('.b_height').data('height');
                 if ( $this.find('.inner').length ) {
                     $this.find('.b_height').css({
@@ -178,7 +222,6 @@
             });
         }
     }
-
 
 
     /*===============
@@ -252,7 +295,7 @@
                   tab             = _this.data('tab'),
                   _se             = _this.closest('.tab-section'),
                   _tabActive      = _se.find('.tab-header .active'),
-                  _parent = _se.find('.tab-header .parent-active'),
+                  _parent         = _se.find('.tab-header .parent-active'),
                   _contentActive  = _se.find('.tabs-container .opened'),
                   _currentContent = $('#' + tab),
                   el              = _currentContent.find('.js_carousel');
@@ -273,30 +316,30 @@
     /*===============
         Accordion
     =================*/
-    if ( $( '.unsen-accordion' ).length ) {
-        $( document ).on( 'click', '.unsen-accordion .item .head > a', function ( e ) {
+    if ( $('.unsen-accordion').length ) {
+        $(document).on('click', '.unsen-accordion .item .head > a', function (e) {
             e.preventDefault();
-            let _this      = $( this ),
-                parent     = _this.closest( '.item' ),
-                parent_top = _this.closest( '.unsen-accordion' ),
-                el         = _this.closest( '.nt_section' ),
+            let _this      = $(this),
+                parent     = _this.closest('.item'),
+                parent_top = _this.closest('.unsen-accordion'),
+                el         = _this.closest('.nt_section'),
                 time       = 300,
                 time2      = time + 50;
 
             if ( el.length === 0 ) {
-                el = _this.closest( '.accordion-section' )
+                el = _this.closest('.accordion-section')
             }
-            parent.addClass( 'opened' )
-            if ( parent.hasClass( 'active' ) ) {
-                parent.removeClass( 'active' );
-                parent.find( '.content' ).slideUp( time );
+            parent.addClass('opened')
+            if ( parent.hasClass('active') ) {
+                parent.removeClass('active');
+                parent.find('.content').slideUp(time);
             } else {
-                parent_top.find( '.item' ).removeClass( 'active' );
-                parent.addClass( 'active' );
-                parent_top.find( '.content' ).slideUp( 150 );
-                parent.find( '.content' ).stop( true, true ).slideDown( time );
+                parent_top.find('.item').removeClass('active');
+                parent.addClass('active');
+                parent_top.find('.content').slideUp(150);
+                parent.find('.content').stop(true, true).slideDown(time);
             }
-        } );
+        });
     }
     /*===============
         DROPDOWN
@@ -643,6 +686,7 @@
         $('.unsen-countdown .time').unsenCountdown();
         unsen_resize_mega_menu();
         better_equal_elems();
+        better_equal_elems_dk();
         banner_fixed_height();
         if ( $.fn.scrollbar ) {
             if ( $('.main-menu .demos-menu').length ) {
@@ -786,12 +830,16 @@
         $('.unsen-tabs .tab-list .tab-item a').catTabs();
         $('.product-control').unsenShopMode();
         unsen_resize_mega_menu();
-
+        better_equal_elems();
+        better_equal_elems_dk();
+        unsen_fullpage();
     });
     window.addEventListener("load", function load() {
         unsen_resize_mega_menu();
         better_equal_elems();
+        better_equal_elems_dk();
         banner_fixed_height();
+        unsen_fullpage();
         $('.product-control').unsenShopMode();
         $('.unsen-tabs .tab-list .tab-item a').catTabs();
         /**
