@@ -1,0 +1,381 @@
+.slideshow .subtitle {
+    letter-spacing: 4.8px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.slideshow .title {
+    font-size: 70px;
+    line-height: 85px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 17px;
+}
+.slideshow .button {
+    padding: 0 30px;
+    width: auto;
+    line-height: 48px;
+    border: solid 1px #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    min-width: 180px;
+}
+.slideshow .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.slideshow-01 .flickity-page-dots .dot {
+    background-color: #fff;
+    background: #fff;
+    width: 7px;
+    height: 7px;
+    position: relative;
+    margin: 0 10px;
+}
+.slideshow-01 .flickity-page-dots .dot::before {
+    width: 11px;
+    height: 11px;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: -2px;
+    top: -2px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.slideshow-01 .flickity-page-dots .dot.is-selected::before {
+    width: 17px;
+    height: 17px;
+    border: solid 1px #fff;
+    background-color: transparent;
+    top: -5px;
+    left: -5px;
+}
+.slideshow-01 .flickity-page-dots .dot.is-selected,
+.slideshow-01 .flickity-page-dots .dot.is-selected {
+    background-color: #fff;
+}
+.slideshow-02 .slide-content {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #e0ecf0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.slideshow-02 .slide-content .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 36.995%;
+}
+.slideshow-02 .slide-content > picture {
+    max-width: 63.005%;
+    overflow: hidden;
+}
+.slideshow-02 .flickity-page-dots {
+    left: 32%;
+    bottom: 35px;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.slideshow-02 .subtitle {
+    color: #000;
+    margin-bottom: 5px;
+}
+.slideshow-02 .title {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    color: #000;
+}
+.slideshow-03 .title {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.slideshow-02 .subtitle {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+
+.unsen-banner.style-01 .banner-content {
+    margin-bottom: 130px;
+}
+.unsen-banner.style-01 .subtitle {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 4.2px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+.unsen-banner.style-01 .title {
+    font-size: 34px;
+    color: #000;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.unsen-banner.style-01 .des {
+    font-size: 14px;
+    color: #868686;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+.unsen-banner.style-01 .des > span {
+    display: block;
+}
+.unsen-banner.style-01 .button {
+    line-height: 39px;
+    padding: 0 40px;
+    border: solid 2px #000;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+}
+.unsen-banner.style-01 .button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.unsen-banner.style-01 .img {
+    text-align: right;
+}
+.unsen-banner.style-02 .hover-element {
+    background-attachment: fixed;
+    height: 920px;
+}
+.unsen-banner.style-02 .banner-content {
+    background-color: #fff;
+    max-width: 575px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 52px 10px 48px;
+}
+.unsen-banner.style-02 .subtitle {
+    letter-spacing: 3.2px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.unsen-banner.style-02 .title {
+    font-size: 50px;
+    line-height: 55px;
+    color: #000;
+    font-weight: 300;
+}
+.unsen-banner.style-02 .button {
+    border: solid 2px #000;
+    color: #000;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 0 35px;
+}
+.unsen-banner.style-02 .button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.unsen-banner.style-02 .button::before {
+    display: none;
+}
+.unsen-banner.style-03 .banner-content {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-bottom: 0;
+    -webkit-transition: 0.5s ease-in-out 0s;
+    -moz-transition: 0.5s ease-in-out 0s;
+    -ms-transition: 0.5s ease-in-out 0s;
+    -o-transition: 0.5s ease-in-out 0s;
+    transition: 0.5s ease-in-out 0s;
+}
+.unsen-banner.style-03:hover .banner-content {
+    padding-bottom: 38px;
+}
+.unsen-banner.style-03 .title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.unsen-banner.style-03 .button {
+    color: #fff;
+    border-color: #fff;
+    padding: 0;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -30px;
+    top: auto;
+    -webkit-transition: 0.8s ease-in-out 0s;
+    -moz-transition: 0.8s ease-in-out 0s;
+    -ms-transition: 0.8s ease-in-out 0s;
+    -o-transition: 0.8s ease-in-out 0s;
+    transition: 0.8s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+.unsen-banner.style-03:hover .button {
+    opacity: 1;
+    visibility: visible;
+    bottom: 10px;
+}
+.unsen-banner.style-03 .button::before {
+    background-color: #fff;
+}
+
+@media (max-width: 1440px) {
+    .unsen-banner.style-01 .banner-content {
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 1199px) {
+    .unsen-banner.style-01 .banner-content {
+        margin-bottom: 50px;
+    }
+    .unsen-banner.style-02 .hover-element {
+        height: 720px;
+    }
+}
+@media (max-width: 1024px) {
+    .slideshow .button {
+        min-width: auto;
+    }
+    .slideshow-01 .title {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    .slideshow-02 .flickity-page-dots {
+        display: none;
+    }
+    .slideshow-02 .subtitle {
+        display: none;
+    }
+    .slideshow-02 .title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 5px;
+    }
+    .slideshow-02 .slide-content .content {
+        width: 40%;
+    }
+    .slideshow-02 .slide-content > picture {
+        max-width: 60%;
+    }
+    .unsen-banner.style-02 .hover-element {
+        height: 620px;
+    }
+}
+@media (max-width: 767px) {
+    .slideshow .flickity-page-dots {
+        display: none;
+    }
+    .slideshow-01 .title {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+    .slideshow .subtitle {
+        display: none;
+    }
+    .slideshow-02 .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .slideshow-02 .slide-content .content {
+        width: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .slideshow-02 .slide-content > picture {
+        max-width: 100%;
+    }
+    .unsen-banner.style-01 .banner-content {
+        margin-bottom: 30px;
+    }
+    .unsen-banner.style-02 .banner-content {
+        max-width: 420px;
+        padding: 32px 0 28px;
+    }
+    .unsen-banner.style-02 .hover-element {
+        height: 520px;
+    }
+}
+@media (max-width: 575px) {
+    .slideshow-01 .title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .slideshow .button {
+        line-height: 38px;
+        padding: 0 20px;
+        font-size: 12px;
+    }
+    .slideshow-02 .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .slideshow-01 .title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .unsen-banner.style-02 .banner-content {
+        max-width: 300px;
+        padding: 20px 10px;
+        background-color: rgba(255,255,255,0.5);
+    }
+    .unsen-banner.style-02 .title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .unsen-banner.style-02 .subtitle {
+        display: none;
+    }
+    .unsen-banner.style-02 .button {
+        padding: 0 20px;
+        line-height: 36px;
+    }
+    .unsen-banner.style-02 .hover-element {
+        height: 360px;
+    }
+}

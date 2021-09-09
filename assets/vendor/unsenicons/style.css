@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'unsen';
-  src:  url('fonts/unsen.eot?a39plu');
-  src:  url('fonts/unsen.eot?a39plu#iefix') format('embedded-opentype'),
-    url('fonts/unsen.ttf?a39plu') format('truetype'),
-    url('fonts/unsen.woff?a39plu') format('woff'),
-    url('fonts/unsen.svg?a39plu#unsen') format('svg');
+  src:  url('fonts/unsen.eot?n23z9l');
+  src:  url('fonts/unsen.eot?n23z9l#iefix') format('embedded-opentype'),
+    url('fonts/unsen.ttf?n23z9l') format('truetype'),
+    url('fonts/unsen.woff?n23z9l') format('woff'),
+    url('fonts/unsen.svg?n23z9l#unsen') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.unsenicon-long-arrow-down:before {
+  content: "\e937";
+}
+.unsenicon-long-arrow-up:before {
+  content: "\e938";
+}
 .unsenicon-mail-2:before {
   content: "\e935";
 }
