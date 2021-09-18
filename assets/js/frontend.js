@@ -658,6 +658,9 @@
         }
     };
     setTimeout(() => $('.unsen_product_thumnb_slide').unsenSingleProductThumbnail(), 100);
+    setTimeout( function () {
+        $('[data-flictiky]').flickity( 'resize' );
+    }, 4000 );
     $.fn.unsenRefresh_flickity = function () {
         $(this).flickity(JSON.parse($(this).attr("data-flickity") || $(this).attr("data-flickityjs") || '{}'));
         return $(this);

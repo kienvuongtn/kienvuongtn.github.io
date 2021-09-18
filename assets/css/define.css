@@ -2515,6 +2515,9 @@ button:focus {
 .bg__fff7f7 {
     background-color: #fff7f7;
 }
+.bg__tranparent {
+    background-color: transparent;
+}
 .height__15px {
     height: 15px;
 }

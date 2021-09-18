@@ -1,0 +1,324 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+.product-item .price {
+    color: #b18249;
+}
+.slideshow-01 .title {
+    font-size: 90px;
+    line-height: 95px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.slideshow-01 .subtitle {
+    color: #fff;
+    font-size: 20px;
+    text-transform: none;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 45px;
+}
+.slideshow-01 .button {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+    line-height: 45px;
+    font-family: 'Jost', sans-serif;
+}
+.unsen-banner.style-01 .banner-content {
+    bottom: 35px;
+    left: 55px;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.unsen-banner.style-01 .subtitle {
+    color: #a1a1a1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 2px;
+}
+.unsen-banner.style-01 .title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 0;
+}
+.unsen-banner.style-02 .banner-content {
+    left: 0;
+    right: 0;
+}
+.unsen-banner.style-02 .title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 8px;
+}
+.unsen-banner.style-02 .subtitle {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 22px;
+    text-transform: none;
+}
+.unsen-banner.style-02 .button {
+    padding: 0 30px;
+    line-height: 32px;
+    background-color: #000;
+    text-transform: uppercase;
+    color: #fff;
+    border: solid 1px #000;
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+}
+.unsen-banner.style-02 .button::before {
+    display: none;
+}
+.unsen-banner.style-02 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-03 .banner-content {
+    left: 0;
+    right: 0;
+}
+.unsen-banner.style-03 .subtitle {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2.8px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 15px;
+}
+.unsen-banner.style-03 .title {
+    font-size: 50px;
+    line-height: 55px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+.unsen-banner.style-03 .button {
+    padding: 0 30px;
+    line-height: 45px;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #000;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.unsen-banner.style-03 .button::before {
+    display: none;
+}
+.unsen-banner.style-03 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-04 .banner-content {
+    right: 15.5%;
+    left: auto;
+}
+.unsen-banner.style-04 .subtitle {
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 2.8px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.unsen-banner.style-04 .title {
+    font-size: 50px;
+    line-height: 60px;
+    color: #000;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+.unsen-banner.style-04 .button {
+    padding: 0 30px;
+    line-height: 45px;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #000;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.unsen-banner.style-04 .button::before {
+    display: none;
+}
+.unsen-banner.style-04 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-05 .banner-content {
+    left: 0;
+    right: 0;
+}
+.unsen-banner.style-05 .subtitle {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 0;
+    letter-spacing: 4.2px;
+}
+.unsen-banner.style-05 .title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 15px;
+}
+.unsen-banner.style-05 .button {
+    border: solid 2px #fff;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Jost', sans-serif;
+    padding: 0 25px;
+    line-height: 29px;
+}
+.unsen-banner.style-05 .button::before {
+    display: none;
+}
+.unsen-banner.style-05 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-06 .banner-content {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.unsen-banner.style-06 .title {
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+.unsen-banner.style-06 .subtitle {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 40px;
+    text-transform: none;
+}
+.unsen-banner.style-06 .button {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border: solid 1px #000;
+    line-height: 31px;
+    padding: 0 30px;
+    font-weight: 400;
+    font-size: 10px;
+}
+.unsen-banner.style-06 .button::before {
+    display: none;
+}
+.unsen-banner.style-06 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-07 .banner-content {
+    left: 27%;
+}
+.unsen-banner.style-07 .icon {
+    font-size: 55px;
+    line-height: 55px;
+    color: #fff;
+    display: block;
+    margin-bottom: 13px;
+}
+.unsen-banner.style-07 .title {
+    font-size: 50px;
+    line-height: 55px;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.unsen-banner.style-07 .subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 22px;
+    color: #fff;
+    text-transform: none;
+}
+.unsen-banner.style-07 .button {
+    line-height: 35px;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    padding: 0 20px;
+    font-weight: 400;
+}
+.unsen-banner.style-07 .button > span {
+    font-size: 10px;
+}
+.unsen-banner.style-07 .button::before {
+    display: none;
+}
+.unsen-banner.style-07 .button:hover {
+    color: #fff;
+    background-color: #000;
+}
+@media (max-width: 1024px) {
+    .slideshow {
+        padding-top: 0;
+    }
+    .unsen-banner.style-04 .banner-content {
+        right: 5%;
+    }
+    .unsen-banner.style-07 .icon {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+    .unsen-banner.style-07 .title {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 5px;
+    }
+    .unsen-banner.style-07 .banner-content {
+        left: 10%;
+    }
+}
+@media (max-width: 991px) {
+    .slideshow-01 .title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .unsen-banner.style-04 .banner-content {
+        right: 30px;
+        text-align: right;
+    }
+}
+@media (max-width: 767px) {
+    .slideshow-01 .subtitle {
+        display: none;
+    }
+    .unsen-banner.style-07 .hover-element  {
+        min-height: 320px;
+    }
+}
+@media (max-width: 480px) {
+    .slideshow-01 .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}

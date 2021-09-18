@@ -1,0 +1,206 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+.main_color,
+.product-item .price,
+.unsen-iconbox .icon.main_color {
+    color: #f92828;
+}
+.slideshow-01 .slide-content {
+    bottom: 125px;
+    left: 0;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.slideshow-01 .title {
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.slideshow-01 .button {
+    background-color: #f92828;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    border: none;
+    line-height: 47px;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+.slideshow-01 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.slideshow-02 .slideshow .flickity-page-dots {
+    bottom: 43px;
+}
+.slideshow-02 .slideshow .flickity-page-dots .dot {
+    background-color: #fff;
+    width: 7px;
+    height: 7px;
+    position: relative;
+}
+.slideshow-02 .slideshow .flickity-page-dots .dot::before {
+    border: solid 2px #fff;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    z-index: 1;
+    left: -2px;
+    top: -2px;
+    content: '';
+}
+.slideshow-02 .slideshow .flickity-page-dots .dot.is-selected::before {
+    width: 17px;
+    height: 17px;
+    left: -6px;
+    top: -6px;
+}
+.slideshow-02 .title {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 12px;
+    line-height: 65px;
+    margin-bottom: 6px;
+}
+.slideshow-02 .subtitle {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    margin-bottom: 18px;
+}
+.slideshow-02 .button {
+    border: solid 2px #fff;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+    line-height: 45px;
+    padding: 0 35px;
+    width: auto;
+    background-color: transparent;
+    font-weight: 400;
+}
+.slideshow-02 .button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.unsen-banner .banner-content {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.unsen-banner .hover-element {
+    min-height: 350px;
+}
+.unsen-banner .title {
+    font-size: 34px;
+    color: #fff;
+    letter-spacing: 6.8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 25px;
+}
+.unsen-banner .button {
+    border: solid 2px #fff;
+    color: #fff;
+    background-color: transparent;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    padding: 0 35px;
+    line-height: 29px;
+}
+.unsen-banner .button::before {
+    display: none;
+}
+.unsen-banner .button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-02 .subtitle {
+    font-size: 18px;
+    text-transform: none;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 10px;
+}
+.unsen-banner.style-03 .subtitle {
+    color: #000;
+    text-transform: none;
+}
+.unsen-banner.style-03 .title {
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+.unsen-banner.style-03 .button {
+    color: #000;
+    border-color: #000;
+}
+.unsen-banner.style-03 .button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.row-banner.style-02 {
+    position: relative;
+    z-index: 2;
+}
+.row-banner.style-03 {
+    margin-top: -140px;
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 1200px) {
+    .slideshow-01 .slide-content {
+        bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slideshow-01 .slide-content {
+        bottom: 30px;
+    }
+    .slideshow-01 .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .unsen-banner.style-01 .title {
+        font-size: 24px;
+        letter-spacing: 4px;
+        margin-bottom: 15px;
+    }
+    .unsen-banner .title {
+        letter-spacing: 3.8px;
+    }
+    .unsen-banner.style-03 .title {
+        letter-spacing: 3px;
+    }
+}
+@media (max-width: 480px) {
+    .slideshow-01 .slide-content {
+        left: 15px;
+        right: 15px;
+    }
+    .slideshow-01 .title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    .u
+}
