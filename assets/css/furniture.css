@@ -110,14 +110,69 @@
     margin-bottom: 12px;
     color: #fff;
 }
-
-.slideshow-02 .subtitle {
+.slideshow-03 .subtitle {
     color: #fff;
     margin-bottom: 5px;
 }
-
-
-
+.slideshow-04 .slide-content {
+    background-color: #915d40;
+    justify-content: flex-start;
+}
+.slideshow-04 .slide-content .content {
+    left: auto;
+    right: 0;
+}
+.slideshow-04 .subtitle {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.slideshow-04 .title {
+    color: #fff;
+    letter-spacing: 5px;
+    margin-bottom: 14px;
+}
+.slideshow-04 .des {
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.slideshow-05 .slide-content > picture {
+    width: 50%;
+}
+.slideshow-05 .slide-content .content {
+    width: 50%;
+    padding-left: 13.5%;
+}
+.slideshow-05 .slide-content {
+    background-color: #0d0d0d;
+}
+.slideshow-05 .subtitle {
+    color: #fff;
+    margin-bottom: 17px;
+}
+.slideshow-05 .title {
+    font-size: 50px;
+    line-height: 65px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.slideshow-05 .button {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    background-color: #fff;
+}
+.slideshow-05 .flickity-page-dots {
+    left: 13%;
+}
+.slideshow-05 .flickity-page-dots .dot {
+    background-color: rgba(255,255,255,0.3);
+}
+.slideshow-05 .flickity-page-dots .dot.is-selected {
+    background-color: #fff;
+}
 .unsen-banner.style-01 .banner-content {
     margin-bottom: 130px;
 }
@@ -259,10 +314,100 @@
 .unsen-banner.style-03 .button::before {
     background-color: #fff;
 }
+.row-banner.style-04 .title {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 40px;
+}
+.unsen-banner.style-04 .banner-content {
+    padding-top: 15px;
+}
+.unsen-banner.style-04 .title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.unsen-banner.style-04 .subtitle {
+    font-size: 13px;
+    color: #868686;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.unsen-banner.style-05 .banner-content {
+    padding-top: 20px;
+}
+.unsen-banner.style-05 .title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 8px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.unsen-banner.style-05 .des {
+    font-size: 13px;
+    color: #868686;
+    margin-bottom: 20px;
+}
+.unsen-banner.style-05 .button {
+    font-size: 13px;
+    color: #000;
+    padding: 0;
+}
+.unsen-banner.style-06 .inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.unsen-banner.style-06 .title {
+    font-size: 40px;
+    font-weight: 300;
+    color: #010101;
+    margin-bottom: 10px;
+}
+.unsen-banner.style-06 .des {
+    color: #010101;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.unsen-banner.style-06 .button {
+    border: solid 2px #000;
+    line-height: 39px;
+    padding: 0 40px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #000000;
+    font-weight: 400;
+    background-color: transparent;
+}
+.unsen-banner.style-06 .button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.unsen-banner.style-06 .button::before {
+    display: none;
+}
+.row-info-21 .custom-heading {
+    color: #010101;
+    font-size: 32px;
+    line-height: 40px;
+}
+.row-info-21 .custom-heading > span {
+    display: block;
+}
+.row-info-21 p {
+    font-size: 13px;
+    color: #868686;
+    line-height: 24px;
+}
 
 @media (max-width: 1440px) {
     .unsen-banner.style-01 .banner-content {
         margin-bottom: 80px;
+    }
+    .slideshow-05 .slide-content .content {
+        padding-left: 5%;
     }
 }
 @media (max-width: 1199px) {
@@ -301,6 +446,15 @@
     .unsen-banner.style-02 .hover-element {
         height: 620px;
     }
+    .slideshow-05 .slide-content .content {
+        width: 50%;
+    }
+    .slideshow-05 .title {
+    
+    }
+    .unsen-banner.style-06 .inner {
+        min-height: 400px;
+    }
 }
 @media (max-width: 767px) {
     .slideshow .flickity-page-dots {
@@ -311,7 +465,8 @@
         line-height: 55px;
         margin-bottom: 10px;
     }
-    .slideshow .subtitle {
+    .slideshow .subtitle,
+    .slideshow .des {
         display: none;
     }
     .slideshow-02 .title {
@@ -327,6 +482,9 @@
     .slideshow-02 .slide-content > picture {
         max-width: 100%;
     }
+    .slideshow-04 .title {
+        color: #000;
+    }
     .unsen-banner.style-01 .banner-content {
         margin-bottom: 30px;
     }
@@ -336,6 +494,16 @@
     }
     .unsen-banner.style-02 .hover-element {
         height: 520px;
+    }
+    .slideshow-05 .slide-content .content {
+        width: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .slideshow-05 .slide-content > picture {
+        max-width: 100%;
+        width: 100%;
     }
 }
 @media (max-width: 575px) {

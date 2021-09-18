@@ -1,0 +1,236 @@
+.slideshow-01 .slide-content {
+    max-width: 570px;
+    left: 10%;
+    right: auto;
+}
+.slideshow-01 .subtitle {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.slideshow-01 .title {
+    color: #fff;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+.slideshow-01 .des {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.slideshow .button {
+    background-color: #0063d1;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 30px;
+    line-height: 40px;
+    border: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: auto;
+    letter-spacing: 1.1px;
+}
+.slideshow .button > span {
+    font-size: 9px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.slideshow .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.slideshow-01 .flickity-button {
+    width: 33px;
+    height: 33px;
+    color: #fff;
+    background-color: #000;
+    font-size: 10px;
+    line-height: 29px;
+}
+.slideshow-01 .flickity-button:hover {
+    color: #000;
+    background-color: #fff;
+}
+.slideshow-01 .flickity-button,
+.slideshow .flickity-prev-next-button.previous,
+.slideshow .flickity-prev-next-button.next,
+.slideshow-01:hover .flickity-prev-next-button.previous,
+.slideshow-01:hover .flickity-prev-next-button.next {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: 6.5%;
+    right: auto;
+    top: auto;
+}
+.slideshow-01 .flickity-prev-next-button.previous {
+    bottom: 13.5%;
+}
+.slideshow-01 .flickity-prev-next-button.next {
+    bottom: 9.5%;
+}
+.slideshow-01 .flickity-prev-next-button::before {
+    content: "\e902";
+}
+.slideshow-01 .flickity-prev-next-button.next::before {
+    content: "\e903";
+}
+.slideshow-02 .title {
+    font-size: 60px;
+    line-height: 70px;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.slideshow-02 .subtitle {
+    color: #929292;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+.slideshow-02 .button {
+    background-color: #000;
+    margin: 0;
+}
+
+
+.unsen-banner.style-01 .banner-content {
+    left: 10.6%;
+}
+.unsen-banner.style-01 .title {
+    font-size: 32px;
+    line-height: 38px;
+    color: #000;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+.unsen-banner.style-01 .subtitle {
+    color: #909297;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+.unsen-banner.style-01 .button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 30px;
+    line-height: 40px;
+    border: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: auto;
+    letter-spacing: 1.1px;
+}
+.unsen-banner.style-01 .button > span {
+    font-size: 9px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.unsen-banner.style-01 .button:hover {
+    color: #fff;
+    background-color: #0063d1;
+}
+.unsen-banner.style-01 .button::before {
+    display: none;
+}
+.unsen-banner.style-02 .banner-content {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 30.5%;
+    left: 10%;
+}
+.unsen-banner.style-02 .title {
+    color: #fff;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.unsen-banner.style-02 .button {
+    line-height: 31px;
+    border: solid 2px #fff;
+    border-radius: 18px;
+    padding: 0 30px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+.unsen-banner.style-02 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-02 .button::before {
+    display: none;
+}
+.unsen-banner.style-03 .banner-content {
+    left: 45px;
+}
+.unsen-banner.style-03 .subtitle {
+    font-size: 14px;
+    color: #636363;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.unsen-banner.style-03 .title {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.unsen-banner.style-03 .button {
+    padding: 0 6px 0 12px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+}
+.unsen-banner.style-03 .button::before {
+    display: none;
+}
+.unsen-banner.style-03 .button > span {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 8px;
+    background-color: #f03333;
+    border-radius: 100%;
+}
+.unsen-banner.style-03 .button:hover {
+    color: #fff;
+    background-color: #000;
+}
+.row-deals.style-04 {
+    margin-top: -190px;
+}
+@media (min-width: 1200px) {
+    .row-banner.style-03 .row {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+    .row-banner.style-03 .row > div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .unsen-banner.style-03 .banner-content {
+        bottom: 20%;
+    }
+}

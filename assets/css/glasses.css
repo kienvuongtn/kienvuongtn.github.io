@@ -1,0 +1,222 @@
+.main_color,
+.unsen-iconbox .icon {
+    color: #ff8400;
+}
+.header .topbar {
+    background-color: #ff8400;
+}
+.header .topbar .notify {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    line-height: 40px;
+}
+.slideshow-01 .slide-content {
+    max-width: 570px;
+    left: auto;
+    right: 14%;
+}
+.slideshow-01 .title {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+}
+.slideshow-01 .subtitle {
+    text-transform: none;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 35px;
+}
+.slideshow-01 .button {
+    line-height: 45px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 0;
+    font-size: 13px;
+    text-transform: none;
+    margin: 0 5px;
+    font-weight: 500;
+    border: none;
+}
+.slideshow-01 .button:hover {
+    background-color: #ff8400;
+}
+.slideshow-02 .title {
+    line-height: 84px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.slideshow-02 .button {
+    color: #000;
+    padding: 0 50px;
+    border-radius: 25px;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    width: auto;
+    border: none;
+}
+.slideshow-02 .button:hover {
+    color: #fff;
+    background-color: #000;
+}
+.slideshow-02 .flickity-prev-next-button {
+    width: 46px;
+    height: 46px;
+    line-height: 42px;
+    border: solid 2px #fff;
+    color: #fff;
+}
+.slideshow-02 .flickity-prev-next-button:hover {
+    color: #000;
+    background-color: #fff;
+}
+.slideshow-02 .flickity-page-dots {
+    bottom: 85px;
+}
+.slideshow-02 .flickity-page-dots .dot {
+    background-color: rgba(255,255,255,0.3);
+}
+.slideshow-02 .flickity-page-dots .dot.is-selected {
+    background-color: #fff;
+}
+
+.unsen-banner.style-01 .banner-content {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    bottom: 11.5%;
+    left: 0;
+    right: 0;
+}
+.unsen-banner.style-01 .title {
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 3px;
+}
+.unsen-banner.style-01 .button {
+    font-size: 14px;
+    border-bottom: solid 1px #868686;
+    color: #868686;
+    padding: 0;
+}
+.unsen-banner.style-01 .button::before {
+    height: 1px;
+    background-color: #868686;
+}
+.unsen-banner.style-01 .button:hover {
+    border-color: #000;
+    color: #000;
+}
+.unsen-banner.style-01 .button:hover::before {
+    background-color: #000;
+}
+.unsen-banner.style-02 .banner-content {
+    max-width: 750px;
+    left: auto;
+    right: 9%;
+}
+.unsen-banner.style-02 .subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.8px;
+    margin-bottom: 6px;
+}
+.unsen-banner.style-02 .title {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 300;
+    margin-bottom: 23px;
+}
+.unsen-banner.style-02 .button::before {
+    display: none;
+}
+.unsen-banner.style-02 .button {
+    color: #fff;
+    background-color: #ff8400;
+    padding: 0 25px;
+    line-height: 38px;
+    border: none;
+    font-size: 13px;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+.unsen-banner.style-02 .button:hover {
+    background-color: #000;
+}
+.unsen-banner.style-02 .hover-element {
+    background-attachment: fixed;
+}
+.unsen-banner.style-04 .banner-content {
+    left: 35px;
+    bottom: 35px;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.unsen-banner.style-04 .title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.unsen-banner.style-04 .button {
+    font-size: 13px;
+    color: #000;
+    line-height: 30px;
+    padding: 0 20px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 5px;
+    background-color: #fff;
+}
+.unsen-banner.style-04 .button:last-child {
+    margin-right: 0;
+}
+.unsen-banner.style-04 .button::before {
+    display: none;
+}
+.unsen-banner.style-04 .button:hover {
+    background-color: #ff8400;
+    color: #fff;
+}
+.unsen-banner.style-05 .banner-content {
+    left: 0;
+    right: 0;
+}
+@media (max-width: 1740px) {
+
+}
+
+@media (max-width: 1024px) {
+    .unsen-banner.style-02 .banner-content {
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+@media (max-width: 767px) {
+    .unsen-banner.style-02 .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .slideshow-02 .title {
+        font-size: 50px;
+        line-height: 60px;
+        margin: 0;
+    }
+    .slideshow-02 .flickity-prev-next-button,
+    .slideshow-02 .flickity-page-dots {
+        display: none;
+    }
+}

@@ -2473,7 +2473,48 @@ button:focus {
 .bg_color_firebrick {
     background-color: #b00022;
 }
-
+.bg__fff {
+    background-color: #fff;
+}
+.bg__000 {
+    background-color: #000;
+}
+.bg__f1e2da {
+    background-color: #f1e2da;
+}
+.bg__eef2ea {
+    background-color: #eef2ea;
+}
+.bg__f2eaf1 {
+    background-color: #f2eaf1;
+}
+.bg__fef5f5 {
+    background-color: #fef5f5;
+}
+.bg__fee8ea {
+    background-color: #fee8ea;
+}
+.bg__666b7e {
+    background-color: #666b7e;
+}
+.bg__f3f3f3 {
+    background-color: #f3f3f3;
+}
+.bg__f5f8fe {
+    background-color: #f5f8fe;
+}
+.bg__ff8400 {
+    background-color: #ff8400;
+}
+.bg__f3f5fc {
+    background-color: #f3f5fc;
+}
+.bg__fef4e9 {
+    background-color: #fef4e9;
+}
+.bg__fff7f7 {
+    background-color: #fff7f7;
+}
 .height__15px {
     height: 15px;
 }
@@ -4021,12 +4062,20 @@ body.overlay-opened {
     -webkit-animation-name: bounceInDown;
 }
 .slideshow .item-slide.is-selected .slide-content .subtitle {
-    animation-duration: 5s;
-    -webkit-animation-duration: 5s;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
     animation-name: fadeInDown;
     -webkit-animation-name: fadeInDown;
+}
+.slideshow .item-slide.is-selected .slide-content .des {
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
 }
 .slideshow .item-slide.is-selected .slide-content .button {
     animation-duration: 2s;
@@ -4056,6 +4105,7 @@ body.overlay-opened {
 .flickity-page-dots .dot.is-selected {
     background-color: #000;
 }
+
 /*Banner*/
 .unsen-banner .inner {
     display: block;
@@ -4075,14 +4125,22 @@ body.overlay-opened {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.unsen-banner .hover-element {
+.unsen-banner .hover-image {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+.unsen-banner .hover-element,
+.unsen-banner .hover-image > img{
     -webkit-transition: 0.5s ease 0s;
     -moz-transition: 0.5s ease 0s;
     -ms-transition: 0.5s ease 0s;
     -o-transition: 0.5s ease 0s;
     transition: 0.5s ease 0s;
 }
-.unsen-banner:hover .hover-element {
+.unsen-banner:hover .hover-element,
+.unsen-banner:hover .hover-image > img{
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);

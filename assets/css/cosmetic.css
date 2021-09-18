@@ -1,0 +1,426 @@
+.slideshow .subtitle {
+    font-size: 14px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+.slideshow .title {
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 80px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 20px;
+}
+.slideshow .des {
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 38px;
+}
+.slideshow .button {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+    line-height: 45px;
+    padding: 0 40px;
+    width: auto;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+.slideshow .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.slideshow-01 .subtitle,
+.slideshow-01 .title,
+.slideshow-01 .des {
+    color: #fff;
+}
+.slideshow-02 .slide-content {
+    left: 12%;
+    max-width: 650px;
+    right: auto;
+}
+
+.row-banner.style-01 {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.row-banner.style-01 > div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.unsen-banner.style-01 .banner-content {
+    bottom: 17%;
+    left: 17.5%;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.unsen-banner.style-01 .subtitle {
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 2.8px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 7px;
+}
+.unsen-banner.style-01 .title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.unsen-banner.style-01 .button {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+}
+.unsen-banner.style-02 .hover-element {
+    height: 100%;
+    background-attachment: fixed;
+}
+.unsen-banner.style-02 .banner-content {
+    left: 0;
+    right: 0;
+}
+.unsen-banner.style-02 .link {
+    font-size: 16px;
+    color: #fff;
+    background-color: #f87c8a;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 74px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 28px;
+}
+.unsen-banner.style-02 .title {
+    font-size: 60px;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+.unsen-banner.style-02 .des {
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 38px;
+}
+.unsen-banner.style-02 .button {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+    line-height: 45px;
+    padding: 0 40px;
+    width: auto;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    border: solid 1px #000;
+}
+.unsen-banner.style-02 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-02 .button::before {
+    display: none;
+}
+.unsen-banner.style-03 .hover-element {
+    margin-bottom: 45px;
+}
+.unsen-banner.style-03 .banner-content {
+    background-color: #fff;
+    left: 30px;
+    right: 30px;
+    bottom: 5px;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    padding: 28px 0 0;
+}
+.unsen-banner.style-03 .title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+.unsen-banner.style-03 .subtitle {
+    font-size: 15px;
+    color: #868686;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.row-banner.style-04 .banner-text {
+    max-width: 435px;
+}
+.row-banner.style-04 .banner-text .subtitle {
+    color: #979797;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-family: 'Jost', sans-serif;
+}
+.row-banner.style-04 .banner-text .title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.row-banner.style-04 .banner-text .des {
+    font-size: 16px;
+    color: #868686;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+.row-banner.style-04 .banner-text .button {
+    border: solid 2px #000;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 40px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 42px;
+}
+.row-banner.style-04 .banner-text .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.row-banner.style-04 .banner-text .button::before {
+    display: none;
+}
+.row-banner.style-04 .banner-product {
+    max-width: 410px;
+    margin-left: 90px;
+}
+.unsen-banner.style-05 .inner {
+    display: flex;
+}
+.unsen-banner.style-05 .banner-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: #e3b69f;
+    padding-left: 15%;
+    min-height: 450px;
+}
+.unsen-banner.style-05 .hover-element {
+    min-height: 450px;
+}
+.unsen-banner.style-05 .subtitle {
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 4.8px;
+}
+.unsen-banner.style-05 .title {
+    font-size: 70px;
+    line-height: 80px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    font-weight: normal;
+}
+.unsen-banner.style-05 .des {
+    font-size: 15px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 45px;
+}
+.unsen-banner.style-05 .button {
+    border: solid 2px #000;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 40px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 42px;
+}
+.unsen-banner.style-05 .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.unsen-banner.style-05 .button::before {
+    display: none;
+}
+@media (max-width: 1500px) {
+    .row-banner.style-04 .banner-product {
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .row-banner.style-04 .banner-text {
+        padding-top: 0;
+    }
+    .unsen-banner.style-05 .title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+@media (max-width: 1199px) {
+    .row-banner.style-04 .banner-text .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .unsen-banner.style-05 .title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .unsen-banner.style-05 .banner-content {
+        padding-left: 5%;
+        padding-right: 15px;
+    }
+    .unsen-banner.style-05 .des {
+        display: none;
+    }
+    .unsen-banner.style-05 .banner-content,
+    .unsen-banner.style-05 .hover-element {
+        min-height: 400px;
+    }
+}
+@media (max-width: 1024px) {
+    .unsen-banner.style-02 .title {
+        font-size: 50px;
+    }
+    .unsen-banner.style-05 .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .unsen-banner.style-05 .banner-content,
+    .unsen-banner.style-05 .hover-element {
+        min-height: 350px;
+    }
+    .row-banner.style-04 .banner-product {
+        margin-left: 50px;
+    }
+}
+@media (max-width: 991px) {
+    .row-banner.style-04 .banner-product {
+        margin-left: 0;
+    }
+}
+@media (max-width: 767px) {
+    .slideshow .subtitle, .slideshow .des {
+        display: none;
+    }
+    
+    .slideshow .title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
+    .slideshow .button {
+        padding: 0 20px;
+        line-height: 38px;
+    }
+    
+    .unsen-banner.style-01 .banner-content {
+        left: 5%;
+        bottom: 10%;
+    }
+    
+    .unsen-banner.style-02 .link {
+        width: 54px;
+        height: 54px;
+        line-height: 54px;
+    }
+    
+    .unsen-banner.style-02 .title {
+        font-size: 40px;
+    }
+    
+    .unsen-banner.style-02 .des {
+        display: none;
+    }
+    .row-banner.style-04 .banner-text .des {
+        margin-bottom: 38px;
+    }
+    .row-banner.style-04 .banner-text .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .row-banner.style-04 .banner-product {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .unsen-banner.style-05 .hover-element {
+        min-height: 300px;
+    }
+    .unsen-banner.style-05 .banner-content {
+        justify-content: center;
+        padding: 0 15px;
+        min-height: 300px;
+        text-align: center;
+    }
+}
+@media (max-width: 575px) {
+    .slideshow .title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .unsen-banner.style-02 .title {
+        font-size: 30px;
+    }
+    .unsen-banner.style-03 .banner-content {
+        padding: 15px 0 0;
+        left: 15px;
+        right: 15px;
+    }
+    .unsen-banner.style-03 .title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .unsen-banner.style-05 .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .slideshow .title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .slideshow .button {
+        padding: 0 15px;
+        line-height: 30px;
+    }
+    
+    .unsen-banner.style-01 .title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+    
+    .unsen-banner.style-01 .subtitle {
+        display: none;
+    }
+    
+}
+@media (max-width: 360px) {
+    .slideshow .title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
