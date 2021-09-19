@@ -657,10 +657,11 @@
 
         }
     };
+
     setTimeout(() => $('.unsen_product_thumnb_slide').unsenSingleProductThumbnail(), 100);
-    setTimeout( function () {
-        $('[data-flictiky]').flickity( 'resize' );
-    }, 4000 );
+    setTimeout(function () {
+        $('[data-flictiky]').flickity('resize');
+    }, 4000);
     $.fn.unsenRefresh_flickity = function () {
         $(this).flickity(JSON.parse($(this).attr("data-flickity") || $(this).attr("data-flickityjs") || '{}'));
         return $(this);
@@ -679,6 +680,22 @@
             });
         }
     }
+
+    var $scrollBar = $('#sly_scrollbar');
+    var sly        = new Sly($('.sly_scroll'), {
+        horizontal: 1,
+        itemNav: 'basic',
+        smart: 1,
+        activateOn: 'click',
+        mouseDragging: 1,
+        touchDragging: 1,
+        releaseSwing: 1,
+        startAt: 1,
+        scrollBar: $scrollBar,
+        scrollBy: 1
+    }, null);
+    sly.init();
+
     /*===============
        ADD TO CART
     =================*/
@@ -699,6 +716,7 @@
                 $('.scroll-content').scrollbar();
             }
         }
+
 
         /*ADD TO WISHLIST*/
         $('.product-item .wishlist > a, .group-buttons > .wishlist-button').on('click', function () {
@@ -836,6 +854,7 @@
         better_equal_elems();
         better_equal_elems_dk();
         unsen_fullpage();
+        sly.init();
     });
     window.addEventListener("load", function load() {
         unsen_resize_mega_menu();

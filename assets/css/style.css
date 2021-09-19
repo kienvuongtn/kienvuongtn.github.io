@@ -2780,6 +2780,46 @@ body {
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
+/* Scrollbar */
+.unsen-categories.style-scroll-content .scrollbar {
+    margin: 0 0 1em 0;
+    height: 2px;
+    background: #ccc;
+    line-height: 0;
+}
+.unsen-categories.style-scroll-content .scrollbar .handle {
+    width: 100px;
+    height: 100%;
+    background: #292a33;
+    cursor: pointer;
+}
+.unsen-categories.style-scroll-content .scrollbar .handle .mousearea {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+#sly_scroll {
+    height: 400px;
+    line-height: 400px;
+    overflow: hidden;
+}
+.unsen-categories.style-scroll-content .scroll-inner {
+    margin: 0 0 40px;
+    padding: 0;
+    height: 100%;
+}
+.unsen-categories.style-scroll-content .category-item {
+    float: left;
+    width: 25%;
+    max-width: 320px;
+    padding: 0;
+    margin: 0 30px 0 0;
+    height: 100%;
+    cursor: pointer;
+}
+
 
 .unsen-testimonial {
     text-align: center;
