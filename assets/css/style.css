@@ -2609,6 +2609,52 @@ body {
     display: inline-block;
     vertical-align: top;
 }
+
+/* Scrollbar */
+.unsen-categories.style-scroll-content .scrollbar {
+    margin: 0 0 1em 0;
+    height: 2px;
+    background: #ccc;
+    line-height: 0;
+}
+.unsen-categories.style-scroll-content .scrollbar .handle {
+    width: 100px;
+    height: 100%;
+    background: #292a33;
+    cursor: pointer;
+}
+.unsen-categories.style-scroll-content .scrollbar .handle .mousearea {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+#sly_scroll {
+    height: 400px;
+    line-height: 400px;
+    overflow: hidden;
+}
+.unsen-categories.style-scroll-content .scroll-inner {
+    margin: 0 0 40px;
+    padding: 0;
+    height: 100%;
+    -webkit-transition: 0.5s ease-in-out 0s;
+    -moz-transition: 0.5s ease-in-out 0s;
+    -ms-transition: 0.5s ease-in-out 0s;
+    -o-transition: 0.5s ease-in-out 0s;
+    transition: 0.5s ease-in-out 0s;
+}
+.unsen-categories.style-scroll-content .category-item {
+    float: left;
+    width: 25%;
+    max-width: 320px;
+    padding: 0;
+    margin: 0 30px 0 0;
+    height: 100%;
+    cursor: pointer;
+}
+/**/
 .unsen-categories.style-14 {
     display: flex;
     justify-content: space-between;
@@ -2742,6 +2788,17 @@ body {
     font-family: 'Jost', sans-serif;
     margin-bottom: 0;
 }
+.unsen-categories.style-19 {
+    overflow: hidden;
+}
+.unsen-categories.style-19 .categories-section {
+    max-width: calc(100% - 90px);
+    float: right;
+}
+.unsen-categories.style-scroll-content .category-item.style-19 {
+    width: 30%;
+    max-width: 456px;
+}
 .category-item.style-19 .content {
     bottom: 33px;
     left: 0;
@@ -2770,6 +2827,10 @@ body {
     font-family: 'Jost', sans-serif;
     color: #000;
 }
+.unsen-categories.style-scroll-content .category-item.style-20 {
+    width: 30%;
+    max-width: 410px;
+}
 .category-item.style-20 .category-thumb {
     margin-bottom: 22px;
 }
@@ -2780,46 +2841,6 @@ body {
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
-/* Scrollbar */
-.unsen-categories.style-scroll-content .scrollbar {
-    margin: 0 0 1em 0;
-    height: 2px;
-    background: #ccc;
-    line-height: 0;
-}
-.unsen-categories.style-scroll-content .scrollbar .handle {
-    width: 100px;
-    height: 100%;
-    background: #292a33;
-    cursor: pointer;
-}
-.unsen-categories.style-scroll-content .scrollbar .handle .mousearea {
-    position: absolute;
-    top: -9px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-}
-#sly_scroll {
-    height: 400px;
-    line-height: 400px;
-    overflow: hidden;
-}
-.unsen-categories.style-scroll-content .scroll-inner {
-    margin: 0 0 40px;
-    padding: 0;
-    height: 100%;
-}
-.unsen-categories.style-scroll-content .category-item {
-    float: left;
-    width: 25%;
-    max-width: 320px;
-    padding: 0;
-    margin: 0 30px 0 0;
-    height: 100%;
-    cursor: pointer;
-}
-
 
 .unsen-testimonial {
     text-align: center;
