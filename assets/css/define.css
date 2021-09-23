@@ -2515,8 +2515,35 @@ button:focus {
 .bg__fff7f7 {
     background-color: #fff7f7;
 }
+.bg__f7f3eb {
+    background-color: #f7f3eb;
+}
+.bg__ebf7f2 {
+    background-color: #ebf7f2;
+}
+.bg__f7ebeb {
+    background-color: #f7ebeb;
+}
+.bg__f1f5fa {
+    background-color: #f1f5fa;
+}
+.bg__f6ebe8 {
+    background-color: #f6ebe8;
+}
+.bg__f8f8f8 {
+    background-color: #f8f8f8;
+}
 .bg__tranparent {
     background-color: transparent;
+}
+.bd__e2e2e2 {
+    border-color: #e2e2e2;
+}
+.bd__e3e3e3 {
+    border-color: #e3e3e3;
+}
+.bd__e8e8e8 {
+    border-color: #e8e8e8;
 }
 .height__15px {
     height: 15px;
