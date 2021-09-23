@@ -97,7 +97,6 @@ body {
     color: #000;
     background-color: #fff;
 }
-
 .unsen-banner .banner-content {
     left: 0;
     right: 0;
@@ -172,6 +171,12 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+    .row-banner-product.banner-right > .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 @media (max-width: 767px) {
     .slideshow-01 .slide-content {
         bottom: 30px;

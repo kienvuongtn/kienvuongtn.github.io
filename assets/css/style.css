@@ -10826,6 +10826,9 @@ table.variable td {
     .footer.style-04 .unsen-custom-menu.style-03 {
         text-align: center;
     }
+    .shortcode-tabs .tab-header {
+        margin-bottom: 15px;
+    }
     .shortcode-tabs .tab-list {
         width: 60%;
     }
@@ -10913,6 +10916,11 @@ table.variable td {
     .shortcode-tabs.style-06 > .container {
         padding: 0;
     }
+    .load-more.style-02 a {
+        width: 90px;
+        height: 90px;
+        padding-top: 10px;
+    }
     .footer.style-10 .footer-part {
         margin-bottom: 30px;
     }
@@ -10997,8 +11005,8 @@ table.variable td {
         margin-bottom: 30px;
     }
     .login-content {
-        width: calc(100% - 60px);
-        max-width: 510px;
+        width: 510px;
+        max-width: 95%;
         max-height: 500px;
         padding: 20px 15px;
     }

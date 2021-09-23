@@ -103,6 +103,23 @@
     margin-bottom: 12px;
     color: #000;
 }
+.slideshow-03 .flickity-button {
+    width: 45px;
+    height: 45px;
+    line-height: 41px;
+    border: solid 2px #fff;
+    color: #fff;
+}
+.slideshow-03 .flickity-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.slideshow-03 .flickity-page-dots .dot {
+    background-color: rgba(255,255,255,0.3);
+}
+.slideshow-03 .flickity-page-dots .dot.is-selected {
+    background-color: #fff;
+}
 .slideshow-03 .title {
     font-size: 60px;
     line-height: 75px;
@@ -445,6 +462,9 @@
     }
     .unsen-banner.style-02 .hover-element {
         height: 620px;
+    }
+    .slideshow-04 .des {
+        display: none;
     }
     .slideshow-05 .slide-content .content {
         width: 50%;

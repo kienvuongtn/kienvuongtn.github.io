@@ -936,7 +936,7 @@
     max-width: 854px;
 }
 .unsen-banner.style-18 .banner-content {
-    left: 165px;
+    left: 19%;
     top: 0;
 }
 .unsen-banner.style-19 .inner {
@@ -969,7 +969,7 @@
     bottom: 55px;
 }
 .unsen-banner.style-22 .banner-content {
-    left: 90px;
+    left: 12.5%;
 }
 .unsen-banner.style-22 .title {
     color: #000;
@@ -1203,6 +1203,16 @@
     .unsen-banner.random-position {
         margin-left: 0;
     }
+    .row-banner.style-24 .col-left {
+        -ms-flex: 0 0 55%;
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
+    .row-banner.style-24 .col-right {
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
 }
 @media (max-width: 991px) {
     
@@ -1217,6 +1227,12 @@
     }
     .row-banner .banner-02 {
         margin-top: 60px;
+    }
+    .row-banner.style-24 .col-left,
+    .row-banner.style-24 .col-right {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 @media (max-width: 767px) {
@@ -1279,6 +1295,19 @@
     .unsen-banner.style-11 .title {
         font-size: 40px;
         line-height: 40px;
+    }
+    .unsen-banner.style-18 .inner {
+        padding-top: 80px;
+    }
+    .unsen-banner.style-19 .banner-content {
+        left: 15px;
+    }
+    .unsen-banner.style-20 .inner {
+        padding-left: 40px;
+    }
+    .unsen-banner.style-21 .banner-content {
+        left: 15px;
+        bottom: 25px;
     }
 }
 @media (max-width: 575px) {
@@ -1383,6 +1412,7 @@
     }
     .slideshow .item-slide .button {
         font-size: 14px;
+        margin: 0;
     }
     .slideshow-06 .slide-content {
         bottom: 40px;
